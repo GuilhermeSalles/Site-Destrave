@@ -1,38 +1,110 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
 
-      <title>Responsive space website - Bedimcode</title>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         
-      </header>
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
 
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home">
-            
-         </section>
-      </main>
-      
-      <!--=============== GSAP ===============-->
-      <script src=""></script>
+   <title>Destrave - Suas metas bem aqui</title>
+</head>
 
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-   </body>
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="" class="nav__logo">
+            <i class="ri-rocket-2-line"></i> Destrave
+         </a>
+
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+
+               <li class="nav__item">
+                  <a href="" class="nav__link">Home</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="" class="nav__link">Features</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="" class="nav__link">Pricing</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="" class="nav__link">Contact</a>
+               </li>
+
+            </ul>
+
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-line"></i>
+            </div>
+         </div>
+
+         <!-- Toggle button -->
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-apps-2-line"></i>
+         </div>
+
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home">
+         <div class="home__container container">
+            <div class="home__content">
+               <h3 class="home__subtitle">
+                  <span>
+                     NAVIGATE THE UNIVERSE
+                  </span>
+               </h3>
+               <h1 class="home__title">
+                  <span>
+                     Start Exploring <br>
+                     Infinite Space
+                  </span>
+                  <img src="assets/img/line.svg" alt="">
+               </h1>
+               <p class="home__description">
+                  Start your exploration in space, navigate
+                  and discover all the wonders of the
+                  universe.
+               </p>
+
+               <a href="#contato" class="home__button"> Vamos começar</a>
+            </div>
+
+            <div class="home__images">
+               <img src="assets/img/points-space.svg" alt="image" class="home__points">
+               <img src="assets/img/planet.svg" alt="image" class="home__planet-2">
+               <img src="assets/img/planet.svg" alt="image" class="home__planet-1">
+               <img src="assets/img/rocket.svg" alt="image" class="home__rocket">
+            </div>
+         </div>
+
+         <img src="assets/img/clouds-1.svg" alt="image" class="home__cloud-1">
+         <img src="assets/img/clouds-2.svg" alt="image" class="home__cloud-2">
+      </section>
+   </main>
+
+   <!--=============== GSAP ===============-->
+   <script src="assets/js/gsap.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+</body>
+
 </html>

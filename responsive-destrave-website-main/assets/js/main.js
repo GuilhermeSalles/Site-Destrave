@@ -38,3 +38,19 @@ gsap.from('.home__cloud-1', 1.5,{opacity: 0, y: 200, delay: 1.2})
 gsap.from('.home__cloud-2', 1.5,{opacity: 0, y: 200, delay: 1.3})
 gsap.from('.home__content', 1.5,{opacity: 0, y: -100, delay: 1.4})
 gsap.from('.home__title img', 1.5,{opacity: 0, y: 100, delay: 1.5})
+
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    // reset: true //Animation repeat
+  })
+  
+  sr.reveal('.contact__container, .botaoContact');
+  sr.reveal('.botao', {origin: 'bottom'});
+  sr.reveal('.about__subtitle, .about__title, .about__description, .simples__title', {origin: 'right'});
+  sr.reveal('.about__image, .about__image2', {origin: 'left'}); 
+  sr.reveal('.services__card', {interval: 100});

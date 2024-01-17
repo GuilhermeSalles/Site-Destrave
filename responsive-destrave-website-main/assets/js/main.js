@@ -52,5 +52,5 @@ const sr = ScrollReveal({
   sr.reveal('.contact__container, .botaoContact');
   sr.reveal('.botao', {origin: 'bottom'});
   sr.reveal('.about__subtitle, .about__title, .about__description, .simples__title', {origin: 'right'});
-  sr.reveal('.about__image, .about__image2', {origin: 'left'}); 
-  sr.reveal('.services__card', {interval: 100});
+  sr.reveal('.about__image, .about__image2, .service__image', {origin: 'left'}); 
+  sr.reveal('.services__card, .services__card2', {interval: 100});

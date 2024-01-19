@@ -3,7 +3,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem;
+  --header-height: 5rem;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
@@ -253,7 +253,7 @@ button {
 
 .home__title img {
   position: absolute;
-  right: 0;
+  right: 4rem;
   bottom: 0;
 }
 
@@ -349,6 +349,7 @@ button {
 .about {
   position: relative;
   height: 100vh;
+  background-color: var(--first-color);
 }
 
 .about__container {
@@ -415,7 +416,7 @@ button {
 
 /*=============== SERVICES ===============*/
 .services {
-  background-color: var(--first-color);
+  background-color: var(--body-color);
 }
 
 .services__container {
@@ -429,18 +430,18 @@ button {
 
 .services__card {
   text-align: center;
-  background-color: var(--body-color);
+  background-color: var(--first-color);
   padding: 3rem 1.25rem;
   border-radius: 1rem;
-  border: 2px solid var(--body-color);
+  border: 2px solid var(--first-color);
   transition: border 0.4s;
 }
 .services__card2 {
   text-align: center;
-  background-color: var(--body-color);
+  background-color: var(--first-color);
   padding: 0.5rem 0.5rem;
   border-radius: 1rem;
-  border: 2px solid var(--body-color);
+  border: 2px solid var(--first-color);
   transition: border 0.4s;
 }
 
@@ -656,9 +657,18 @@ button {
   .container {
     margin-inline: 1rem;
   }
-
+  
+  .home__title{
+    font-size: x-large;
+  }
+  
   .about__image {
     top: -2rem;
+  }
+
+  .imglogo{
+    margin-left: 7.75rem;
+    width: 110px;
   }
 
   .simples__title2,
@@ -697,7 +707,7 @@ button {
 /* For taller devices */
 @media screen and (min-width: 376px) and (min-height: 800px) {
   .home__container {
-    padding-top: 7rem;
+    padding-top: 10rem;
   }
   .about__container {
     padding-top: 1rem;
@@ -866,6 +876,7 @@ button {
     width: 160px;
     height: 140px;
   }
+
   .nav {
     height: calc(var(--header-height) + 2rem);
   }
@@ -1094,7 +1105,7 @@ button {
   }
 
   .contact__group {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     column-gap: 1.5rem;
   }
 

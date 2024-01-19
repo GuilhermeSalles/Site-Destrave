@@ -49,7 +49,7 @@ const sr = ScrollReveal({
     // reset: true //Animation repeat
   })
   
-  sr.reveal('.contact__container, .botaoContact');
+  sr.reveal('.contact__container, .botaoContact, .section__title');
   sr.reveal('.botao', {origin: 'bottom'});
   sr.reveal('.about__subtitle, .about__title, .about__description, .simples__title', {origin: 'right'});
   sr.reveal('.about__image, .about__image2, .service__image', {origin: 'left'}); 

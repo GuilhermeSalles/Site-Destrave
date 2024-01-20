@@ -639,6 +639,20 @@ button {
   transition: bottom 0.4s, transform 0.4s;
 }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  outline: none;
+  padding: 1px;
+  background-color: #0dbf43;
+  border-radius: 15px;
+  box-shadow: rgba(75, 75, 75, 0.25) 5px 5px 5px,
+    rgba(75, 75, 75, 0.22) 5px 5px 5px;
+}
+
 .scrollup:hover {
   transform: translateY(-0.25rem);
 }

@@ -124,7 +124,7 @@
                   no seu negócio para ter mais resultados.
                </p>
 
-               <a href="#contato" class="home__button">Agende um sessão Gratuita</a>
+               <a href="#contact" class="home__button">Agende uma sessão Gratuita</a>
             </div>
 
             <div class="home__images">
@@ -207,7 +207,7 @@
                   Oferecemos soluções personalizadas que vão além de melhorar sua presença online;
                   elas transformam essa presença em um aumento real de vendas e faturamento.
                </p>
-               <a href="#" class="home__button botao"> Vamos começar</a>
+               <a href="#contact" class="home__button botao"> Vamos começar</a>
             </div>
          </div>
 
@@ -298,7 +298,7 @@
 
          </div>
          <div class="section__subtitle">
-            <a href="#" class="home__button botao"> Vamos começar</a>
+            <a href="#contact" class="home__button botao"> Vamos começar</a>
          </div>
       </section>
 
@@ -356,12 +356,14 @@
          </div>
          <br>
          <div class="section__subtitle">
-            <a href="#" class="home__button botao"> Vamos começar</a>
+            <a href="#contact" class="home__button botao"> Vamos começar</a>
          </div>
       </section>
 
    </main>
    <!--==================== FOOTER ====================-->
+   <a href="https://wa.me/5519988408183" id="myBtn"> <img src="assets/img/wpp.png" width="50px" height="50px"
+         alt="logotipo whatsapp"></a>
    <footer class="footer">
       <div class="footer__container container grid">
          <div>
@@ -391,9 +393,17 @@
    </footer>
 
    <!--========== SCROLL UP ==========-->
-   <a href="" class="scrollup" id="scroll-up">
-      <i class="ri-arrow-up-line"></i>
-   </a>
+   <script>
+      var mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function () {
+         scrollFunction();
+      };
+
+      function scrollFunction() {
+         mybutton.style.display = "block";
+      }
+   </script>
 
 
    </main>

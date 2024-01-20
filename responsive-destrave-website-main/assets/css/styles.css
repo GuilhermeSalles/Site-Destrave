@@ -360,6 +360,7 @@ button {
 
 .about__content {
   text-align: center;
+  margin-top: -1rem;
 }
 
 .about__subtitle {
@@ -416,6 +417,10 @@ button {
 
 /*=============== SERVICES ===============*/
 .services {
+  background-color: var(--first-color);
+}
+
+.services2 {
   background-color: var(--body-color);
 }
 
@@ -438,10 +443,10 @@ button {
 }
 .services__card2 {
   text-align: center;
-  background-color: var(--first-color);
+  background-color: var(--body-color);
   padding: 0.5rem 0.5rem;
   border-radius: 1rem;
-  border: 2px solid var(--first-color);
+  border: 2px solid var(--body-color);
   transition: border 0.4s;
 }
 
@@ -499,6 +504,7 @@ button {
 /*=============== CONTACT ===============*/
 .contact {
   background-color: var(--container-color);
+  margin-top: -3rem;
 }
 
 .contact__container {
@@ -552,7 +558,7 @@ button {
 }
 
 .footer {
-  background-color: var(--first-color);
+  background-color: var(--body-color);
   padding-block: 3.5rem 2rem;
 }
 
@@ -676,18 +682,14 @@ button {
     margin-top: -4rem;
   }
 
-  .title2 {
-    margin-top: -2rem;
-  }
-
   .service__image {
-    top: -1.5rem;
+    top: -.5rem;
     left: 1.5rem;
     width: 310px;
   }
 
   .services__container2 {
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
 
   .content3 {
@@ -702,12 +704,20 @@ button {
     margin-left: 5.5rem;
   }
 
+  .about{
+    height: 105vh;
+  }
+
 }
 
 /* For taller devices */
 @media screen and (min-width: 376px) and (min-height: 800px) {
   .home__container {
     padding-top: 10rem;
+  }
+
+  .home{
+    height: 70vh;
   }
   .about__container {
     padding-top: 1rem;
@@ -717,10 +727,12 @@ button {
     font-size: 0.95rem;
   }
 
+  .imglogo{
+    right: 8rem;
+  }
+
   .section__title {
     font-size: 1.25rem;
-    padding-top: 2rem;
-    margin-bottom: 0;
   }
 
   .service__image {
@@ -764,6 +776,10 @@ button {
     justify-content: center;
   }
 
+  .about__container{
+    margin-top: -6rem;
+  }
+
   .nav__menu {
     width: 60%;
   }
@@ -785,7 +801,7 @@ button {
   .service__image {
     width: 220px;
     top: 6rem;
-    left: 5rem;
+    left: 5.5rem;
   }
 
   .content2 {
@@ -793,7 +809,7 @@ button {
   }
 
   .services__container2 {
-    margin-top: 2rem;
+    margin-top: 7rem;
   }
 }
 
@@ -833,7 +849,7 @@ button {
 
   .service__image {
     width: 370px;
-    top: 11rem;
+    top: 18rem;
     left: -1rem; /*teste*/
   }
 
@@ -843,7 +859,7 @@ button {
   }
 
   .simples__title3 {
-    margin-bottom: -1rem;
+    margin-bottom: s1rem;
   }
 
   .simples__title4 {
@@ -877,6 +893,10 @@ button {
     height: 140px;
   }
 
+  .about{
+    height: 120vh;
+  }
+
   .nav {
     height: calc(var(--header-height) + 2rem);
   }
@@ -905,7 +925,7 @@ button {
 
   .service__image {
     width: 380px;
-    top: 11rem;
+    top: 18rem;
     left: -1rem; /*teste*/
   }
 
@@ -915,10 +935,6 @@ button {
   }
 
   .simples__title3 {
-    margin-bottom: -1rem;
-  }
-
-  .simples__title4 {
     margin-bottom: 1rem;
   }
 
@@ -942,7 +958,6 @@ button {
 @media screen and (min-width: 1152px) {
   .section__title {
     font-size: 2.25rem;
-    margin-bottom: 3.5rem;
   }
   .container {
     margin-inline: auto;
@@ -1083,10 +1098,10 @@ button {
   }
 
   .service__image {
-    width: 400px;
+    width: 380px;
     height: auto;
-    left: -6rem;
-    top: 5rem;
+    top: 10rem;
+    left: 2rem;
   }
   .about__image {
     width: 400px;

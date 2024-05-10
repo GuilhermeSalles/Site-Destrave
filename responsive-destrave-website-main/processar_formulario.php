@@ -5,28 +5,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $tel = $_POST["user_tel"];
 
     // E-mail de destino
-    $to = "marketing@seudestrave.com.br";
+    $to = 'destrave.marketingfg@gmail.com';
 
     // Assunto do e-mail
-    $subject = "Novo formulário de contato Site";
+    $subject = 'Novo formulário de contato do site';
 
-    // Mensagem do e-mail
+    // Construir a mensagem
     $message = "Nome: $name\n";
     $message .= "E-mail: $email\n";
-    $message .= "WhatsApp:\n$tel";
+    $message .= "WhatsApp: $tel\n";
 
     // Cabeçalhos do e-mail
-    $headers = "From: $email";
+    $headers = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-type: text/plain; charset=utf-8\r\n";
+
+    // Configurações do servidor SMTP
+    ini_set('SMTP', 'smtp.hostinger.com');
+    ini_set('smtp_port', 465);
+    ini_set('sendmail_from', 'marketing@seudestrave.com.br');
 
     // Enviar e-mail
-    mail($to, $subject, $message, $headers);
-     // Enviar e-mail
-     if (mail($to, $subject, $message, $headers)) {
-        // Redirecionar para a tela index.php
-        header("Location: index");
-        exit();  // Certifique-se de sair após o redirecionamento
+    if (mail($to, $subject, $message, $headers)) {
+        echo 'A mensagem foi enviada!';
     } else {
-        echo "Erro ao enviar o e-mail.";
+        echo 'Erro ao enviar o e-mail.';
     }
 }
+
 ?>

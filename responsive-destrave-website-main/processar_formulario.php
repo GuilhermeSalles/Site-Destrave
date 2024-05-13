@@ -1,19 +1,20 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST["user_name"];
+    // Recupera os dados do formulário
+    $nome = $_POST["user_name"];
     $email = $_POST["user_email"];
-    $tel = $_POST["user_tel"];
+    $tell = $_POST["user_tel"];
 
     // E-mail de destino
-    $to = 'destrave.marketingfg@gmail.com';
+    $to = 'marketing@seudestrave.com.br';
 
     // Assunto do e-mail
-    $subject = 'Novo formulário de contato do site';
+    $subject = "Email site Destrave";
 
     // Construir a mensagem
-    $message = "Nome: $name\n";
-    $message .= "E-mail: $email\n";
-    $message .= "WhatsApp: $tel\n";
+    $message = "E-mail enviado por: $email\n\n";
+    $message = "Nome: $nome\n\n";
+    $message .= "Telefone:\n$tell";
 
     // Cabeçalhos do e-mail
     $headers = "From: $email\r\n";
@@ -28,10 +29,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Enviar e-mail
     if (mail($to, $subject, $message, $headers)) {
-        echo 'A mensagem foi enviada!';
+        echo '<script>alert("Mensagem enviada com sucesso!"); window.location.href = "../";</script>';
     } else {
-        echo 'Erro ao enviar o e-mail.';
+        echo '<script>alert("Erro ao enviar mensagem. Por favor, tente novamente mais tarde."); window.location.href = "../";</script>';
     }
 }
-
 ?>
+

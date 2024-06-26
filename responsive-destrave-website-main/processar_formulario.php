@@ -1,4 +1,9 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'vendor/autoload.php'; // Inclui o autoload do Composer
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recupera os dados do formulário
     $nome = $_POST["user_name"];
@@ -12,27 +17,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = "Email site Destrave";
 
     // Construir a mensagem
-    $message = "E-mail enviado por: $email\n\n";
     $message = "Nome: $nome\n\n";
-    $message .= "Telefone:\n$tell";
+    $message .= "E-mail: $email\n\n";
+    $message .= "Telefone: $tell";
 
-    // Cabeçalhos do e-mail
-    $headers = "From: $email\r\n";
-    $headers .= "Reply-To: $email\r\n";
-    $headers .= "MIME-Version: 1.0\r\n";
-    $headers .= "Content-type: text/plain; charset=utf-8\r\n";
+    // Configurações de SMTP
+    $mail = new PHPMailer(true);
+    try {
+        // Configuração do servidor SMTP
+        $mail->isSMTP();
+        $mail->Host = 'smtp.hostinger.com'; // Configure com o seu host SMTP
+        $mail->SMTPAuth = true;
+        $mail->Username = 'marketing@seudestrave.com.br'; // Insira seu e-mail aqui
+        $mail->Password = 'Rdm*19077608'; // Insira sua senha aqui
+        $mail->SMTPSecure = 'ssl'; // tls se preferir usar tls
+        $mail->Port = 465; // 587 se preferir usar tls
 
-    // Configurações do servidor SMTP
-    ini_set('SMTP', 'smtp.hostinger.com');
-    ini_set('smtp_port', 465);
-    ini_set('sendmail_from', 'marketing@seudestrave.com.br');
+        // Remetente e destinatário
+        $mail->setFrom('marketing@seudestrave.com.br'); // Use um e-mail válido configurado na Hostinger
+        $mail->addAddress($to);
 
-    // Enviar e-mail
-    if (mail($to, $subject, $message, $headers)) {
+        // Conteúdo do e-mail
+        $mail->isHTML(false); // Define se o e-mail será enviado como HTML ou texto simples
+        $mail->Subject = $subject; // Define o assunto do e-mail
+        $mail->Body = $message; // Define o corpo do e-mail
+
+        // Envia o e-mail
+        $mail->send();
         echo '<script>alert("Mensagem enviada com sucesso!"); window.location.href = "../";</script>';
-    } else {
+    } catch (Exception $e) {
         echo '<script>alert("Erro ao enviar mensagem. Por favor, tente novamente mais tarde."); window.location.href = "../";</script>';
+        // Descomente a linha abaixo para obter mais detalhes sobre o erro
+        // echo 'Erro no envio do email: ', $mail->ErrorInfo;
     }
 }
 ?>
-

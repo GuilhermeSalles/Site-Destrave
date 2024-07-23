@@ -11,6 +11,9 @@
     <!--=============== REMIX ICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -210,194 +213,152 @@
                 <div class="item item6"><img src="assets/img/parceiros/6.png" alt=""></div>
                 <div class="item item7"><img src="assets/img/parceiros/7.png" alt=""></div>
                 <div class="item item8"><img src="assets/img/parceiros/8.png" alt=""></div>
+                <div class="item item8"><img src="assets/img/parceiros/9.png" alt=""></div>
             </div>
 
-            <style>
-                *,
-                *::before,
-                *::after {
-                    box-sizing: border-box;
-                }
-
-                * {
-                    margin: 0;
-                }
-
-                .wrapper {
-                    width: 90%;
-                    max-width: 1536px;
-                    margin-inline: auto;
-                    position: relative;
-                    height: 100px;
-                    margin-top: 5rem;
-                    overflow: hidden;
-                    mask-image: linear-gradient(to right,
-                            rgba(0, 0, 0, 0),
-                            rgba(0, 0, 0, 1) 20%,
-                            rgba(0, 0, 0, 1) 80%,
-                            rgba(0, 0, 0, 0));
-                }
-
-                @keyframes scrollLeft {
-                    to {
-                        left: -200px;
-                    }
-                }
-
-                .item {
-                    width: 200px;
-                    height: 100px;
-                    border-radius: 6px;
-                    position: absolute;
-                    left: max(calc(200px * 8), 100%);
-                    animation-name: scrollLeft;
-                    animation-duration: 30s;
-                    animation-timing-function: linear;
-                    animation-iteration-count: infinite;
-                }
-
-                .item1 {
-                    animation-delay: calc(30s / 8 * (8 - 1) * -1);
-                }
-
-                .item2 {
-                    animation-delay: calc(30s / 8 * (8 - 2) * -1);
-                }
-
-                .item3 {
-                    animation-delay: calc(30s / 8 * (8 - 3) * -1);
-                }
-
-                .item4 {
-                    animation-delay: calc(30s / 8 * (8 - 4) * -1);
-                }
-
-                .item5 {
-                    animation-delay: calc(30s / 8 * (8 - 5) * -1);
-                }
-
-                .item6 {
-                    animation-delay: calc(30s / 8 * (8 - 6) * -1);
-                }
-
-                .item7 {
-                    animation-delay: calc(30s / 8 * (8 - 7) * -1);
-                }
-
-                .item8 {
-                    animation-delay: calc(30s / 8 * (8 - 8) * -1);
-                }
-            </style>
         </section>
 
         <!--==================== QUESTIONS ====================-->
-        <section class="questions section" id="faqs">
+        <section class="questions section" id="plans">
             <h2 class="section__title-center questions__title container">
-                Some common questions <br> were often asked
+                Escolha o Plano Perfeito para Você!
             </h2>
 
-            <div class="questions__container container grid">
-                <div class="questions__group">
-                    <div class="questions__item">
-                        <header class="questions__header">
-                            <i class="ri-add-line questions__icon"></i>
-                            <h3 class="questions__item-title">
-                                My flowers are falling off or dying?
-                            </h3>
+            <section class="card container grid">
+                <div class="card__container grid">
+                    <!--==================== CARD 1 ====================-->
+                    <article class="card__content grid">
+                        <div class="card__pricing">
+                            <div class="card__pricing-number">
+                                <span class="card__pricing-symbol">$</span>0
+                            </div>
+                            <span class="card__pricing-month">/month</span>
+                        </div>
+
+                        <header class="card__header">
+                            <div class="card__header-circle grid">
+                                <img src="assets/img/free-coin.png" alt="" class="card__header-img">
+                            </div>
+
+                            <span class="card__header-subtitle">Free plan</span>
+                            <h1 class="card__header-title">Basic</h1>
                         </header>
 
-                        <div class="questions__content">
-                            <p class="questions__description">
-                                Plants are easy way to add color energy and transform your
-                                space but which planet is for you. Choosing the right plant.
-                            </p>
-                        </div>
-                    </div>
+                        <ul class="card__list grid">
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">3 user request</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">10 downloads por day</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Daily content updates</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Fully editable files</p>
+                            </li>
+                        </ul>
 
-                    <div class="questions__item">
-                        <header class="questions__header">
-                            <i class="ri-add-line questions__icon"></i>
-                            <h3 class="questions__item-title">
-                                What causes leaves to become pale?
-                            </h3>
+                        <button class="card__button">Choose this plan</button>
+                    </article>
+
+                    <!--==================== CARD 2 ====================-->
+                    <article class="card__content grid">
+                        <div class="card__pricing">
+                            <div class="card__pricing-number">
+                                <span class="card__pricing-symbol">$</span>19
+                            </div>
+                            <span class="card__pricing-month">/month</span>
+                        </div>
+
+                        <header class="card__header">
+                            <div class="card__header-circle grid">
+                                <img src="assets/img/pro-coin.png" alt="" class="card__header-img">
+                            </div>
+
+                            <span class="card__header-subtitle">Most popular</span>
+                            <h1 class="card__header-title">Professional</h1>
                         </header>
 
-                        <div class="questions__content">
-                            <p class="questions__description">
-                                Plants are easy way to add color energy and transform your
-                                space but which planet is for you. Choosing the right plant.
-                            </p>
-                        </div>
-                    </div>
+                        <ul class="card__list grid">
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">100 user request</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Unlimited downloads</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Unlock all features from our site</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Daily content updates</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Fully editable files</p>
+                            </li>
+                        </ul>
 
-                    <div class="questions__item">
-                        <header class="questions__header">
-                            <i class="ri-add-line questions__icon"></i>
-                            <h3 class="questions__item-title">
-                                What causes brown crispy leaves?
-                            </h3>
+                        <button class="card__button">Choose this plan</button>
+                    </article>
+
+                    <!--==================== CARD 3 ====================-->
+                    <article class="card__content grid">
+                        <div class="card__pricing">
+                            <div class="card__pricing-number">
+                                <span class="card__pricing-symbol">$</span>29
+                            </div>
+                            <span class="card__pricing-month">/month</span>
+                        </div>
+
+                        <header class="card__header">
+                            <div class="card__header-circle grid">
+                                <img src="assets/img/enterprise-coin.png" alt="" class="card__header-img">
+                            </div>
+
+                            <span class="card__header-subtitle">For agencies</span>
+                            <h1 class="card__header-title">Enterprise</h1>
                         </header>
 
-                        <div class="questions__content">
-                            <p class="questions__description">
-                                Plants are easy way to add color energy and transform your
-                                space but which planet is for you. Choosing the right plant.
-                            </p>
-                        </div>
-                    </div>
+                        <ul class="card__list grid">
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Unlimited user request</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Unlimited downloads</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Unlock all features from our site</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Daily content updates</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Fully editable files</p>
+                            </li>
+                        </ul>
+
+                        <button class="card__button">Choose this plan</button>
+                    </article>
                 </div>
-
-                <div class="questions__group">
-                    <div class="questions__item">
-                        <header class="questions__header">
-                            <i class="ri-add-line questions__icon"></i>
-                            <h3 class="questions__item-title">
-                                How do i choose a plant?
-                            </h3>
-                        </header>
-
-                        <div class="questions__content">
-                            <p class="questions__description">
-                                Plants are easy way to add color energy and transform your
-                                space but which planet is for you. Choosing the right plant.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="questions__item">
-                        <header class="questions__header">
-                            <i class="ri-add-line questions__icon"></i>
-                            <h3 class="questions__item-title">
-                                How do I change the pots?
-                            </h3>
-                        </header>
-
-                        <div class="questions__content">
-                            <p class="questions__description">
-                                Plants are easy way to add color energy and transform your
-                                space but which planet is for you. Choosing the right plant.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="questions__item">
-                        <header class="questions__header">
-                            <i class="ri-add-line questions__icon"></i>
-                            <h3 class="questions__item-title">
-                                Why are gnats flying around my plant?
-                            </h3>
-                        </header>
-
-                        <div class="questions__content">
-                            <p class="questions__description">
-                                Plants are easy way to add color energy and transform your
-                                space but which planet is for you. Choosing the right plant.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </section>
         </section>
+
+
+
 
         <!--==================== FOOTER ====================-->
         <footer class="footer section">

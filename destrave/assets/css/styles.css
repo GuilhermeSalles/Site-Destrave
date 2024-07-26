@@ -459,6 +459,7 @@ button {
 
 .services__title {
   font-size: var(--h2-font-size);
+  color: white;
   margin-bottom: 1.5rem;
 }
 
@@ -481,6 +482,7 @@ button {
 .services__title2 {
   font-size: var(--h3-font-size);
   margin-bottom: 1rem;
+  color: white;
 }
 
 .services__card2:hover {
@@ -642,15 +644,14 @@ button {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 60px;
   right: 30px;
   z-index: 99;
   outline: none;
   padding: 1px;
   background-color: #0dbf43;
   border-radius: 15px;
-  box-shadow: rgba(75, 75, 75, 0.25) 5px 5px 5px,
-    rgba(75, 75, 75, 0.22) 5px 5px 5px;
+  box-shadow: #2acc6f2e -2px -3px 7px, #2acc6f26 4px 3px 4px;
 }
 
 .scrollup:hover {
@@ -677,16 +678,16 @@ button {
   .container {
     margin-inline: 1rem;
   }
-  
-  .home__title{
+
+  .home__title {
     font-size: x-large;
   }
-  
+
   .about__image {
     top: -2rem;
   }
 
-  .imglogo{
+  .imglogo {
     margin-left: 7.75rem;
     width: 110px;
   }
@@ -697,7 +698,7 @@ button {
   }
 
   .service__image {
-    top: -.5rem;
+    top: -0.5rem;
     left: 1.5rem;
     width: 310px;
   }
@@ -714,24 +715,23 @@ button {
     margin-top: 7rem;
   }
 
-  .imgfooter{
+  .imgfooter {
     margin-left: 5.5rem;
   }
 
-  .about{
+  .about {
     height: 105vh;
   }
-
 }
 
 /* For taller devices */
 @media screen and (min-width: 376px) and (min-height: 800px) {
   .home__container {
-    padding-top: 10rem;
+    padding-top: 4rem;
   }
 
-  .home{
-    height: 70vh;
+  .home {
+    height: 100vh;
   }
   .about__container {
     padding-top: 1rem;
@@ -739,19 +739,19 @@ button {
 
   .section__subtitle {
     font-size: 0.95rem;
+    padding-bottom: 3rem;
   }
 
-  .imglogo{
+  .imglogo {
     right: 8rem;
   }
 
   .section__title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .service__image {
     width: 320px;
-    margin-left: 4.0rem;
     top: 6rem;
   }
 
@@ -771,11 +771,9 @@ button {
     margin-top: -2rem;
   }
 
-  
-  .imgfooter{
+  .imgfooter {
     margin-left: 6rem;
   }
-
 }
 
 /* For medium devices */
@@ -790,8 +788,8 @@ button {
     justify-content: center;
   }
 
-  .about__container{
-    margin-top: -6rem;
+  .about__container {
+    margin-top: -2rem;
   }
 
   .nav__menu {
@@ -907,8 +905,8 @@ button {
     height: 140px;
   }
 
-  .about{
-    height: 120vh;
+  .about {
+    height: 80vh;
   }
 
   .nav {
@@ -1060,7 +1058,6 @@ button {
   .services__card {
     padding-block: 1.5rem;
   }
-
 }
 
 /* For medium devices */
@@ -1093,6 +1090,7 @@ button {
 
   .section__subtitle {
     font-size: var(--normal-font-size);
+    padding-bottom: 3rem;
   }
 }
 
@@ -1112,7 +1110,7 @@ button {
   }
 
   .service__image {
-    width: 380px;
+    width: 346px;
     height: auto;
     top: 10rem;
     left: 2rem;
@@ -1172,4 +1170,81 @@ button {
   .scrollup {
     right: 3rem;
   }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+  position: relative;
+  height: 100px;
+  margin-top: 5rem;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+.item {
+  width: 200px;
+  height: 100px;
+  border-radius: 6px;
+  position: absolute;
+  left: max(calc(200px * 8), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.item1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }

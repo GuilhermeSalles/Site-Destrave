@@ -1,4 +1,5 @@
 <?php
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -8,18 +9,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recupera os dados do formulário
     $nome = $_POST["user_name"];
     $email = $_POST["user_email"];
-    $tell = $_POST["user_tel"];
+    $telefone = $_POST["user_tel"];
+    $revenue = $_POST["user_revenue"];
+    $marketing = $_POST["user_marketing"];
+    $planType = $_POST["planType"];
 
     // E-mail de destino
     $to = 'marketing@seudestrave.com.br';
 
     // Assunto do e-mail
-    $subject = "Email site Destrave";
+    $subject = "Email site Destrave - Plano: $planType";
 
     // Construir a mensagem
-    $message = "Nome: $nome\n\n";
-    $message .= "E-mail: $email\n\n";
-    $message .= "Telefone: $tell";
+    $message = "Nome: $nome\n";
+    $message .= "E-mail: $email\n";
+    $message .= "Telefone: $telefone\n";
+    $message .= "Faturamento mensal médio: $revenue\n";
+    $message .= "Investimento em anúncios online e marketing: $marketing";
 
     // Configurações de SMTP
     $mail = new PHPMailer(true);
@@ -34,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port = 465; // 587 se preferir usar tls
 
         // Remetente e destinatário
-        $mail->setFrom('marketing@seudestrave.com.br'); // Use um e-mail válido configurado na Hostinger
+        $mail->setFrom('marketing@seudestrave.com.br', 'Destrave Digital'); // Use um e-mail válido configurado na Hostinger
         $mail->addAddress($to);
 
         // Conteúdo do e-mail
@@ -44,11 +50,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Envia o e-mail
         $mail->send();
-        echo '<script>alert("Mensagem enviada com sucesso!"); window.location.href = "../";</script>';
+        echo '<script>alert("Mensagem enviada com sucesso!"); window.location.href = "../sites";</script>';
     } catch (Exception $e) {
-        echo '<script>alert("Erro ao enviar mensagem. Por favor, tente novamente mais tarde."); window.location.href = "../";</script>';
+        echo '<script>alert("Erro ao enviar mensagem. Por favor, tente novamente mais tarde."); window.location.href = "../sites";</script>';
         // Descomente a linha abaixo para obter mais detalhes sobre o erro
         // echo 'Erro no envio do email: ', $mail->ErrorInfo;
     }
 }
-?>

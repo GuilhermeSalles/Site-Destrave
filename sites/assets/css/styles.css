@@ -1218,7 +1218,7 @@ img {
     var(--first-color-light) -12%,
     var(--first-color) 109%
   );
-  width: 60px;
+  width: 94px;
   height: 88px;
   right: 1.5rem;
   top: -1rem;
@@ -1259,7 +1259,7 @@ img {
   height: 14px;
   background-color: var(--container-color);
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   clip-path: polygon(0 101%, 50% 0, 100% 101%);
 }
 
@@ -1340,11 +1340,11 @@ img {
     margin-right: auto;
   }
   .card {
-    height: 70vh;
+    height: 90vh;
     align-items: center;
   }
   .card__container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
   .card__header-circle {
     margin-bottom: var(--mb-1-25);
@@ -1354,6 +1354,7 @@ img {
   }
 }
 
+/* Modal */
 /* Modal */
 .modal {
   display: none; /* Hidden by default */
@@ -1409,12 +1410,22 @@ label {
 input[type="text"],
 input[type="tel"],
 input[type="email"],
+input[type="url"],
 select {
   width: 100%;
   padding: 0.75rem;
   border: 1px solid var(--first-color-light);
   border-radius: 8px;
   box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--first-color-light);
+  border-radius: 8px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+  resize: vertical; /* Allow vertical resizing only */
 }
 
 input[type="submit"] {
@@ -1485,6 +1496,8 @@ form {
 input[type="text"],
 input[type="tel"],
 input[type="email"],
+input[type="url"],
+textarea,
 select {
   width: 100%;
   padding: 0.75rem;

@@ -10,22 +10,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST["user_name"];
     $email = $_POST["user_email"];
     $telefone = $_POST["user_tel"];
-    $revenue = $_POST["user_revenue"];
-    $marketing = $_POST["user_marketing"];
+    $website = $_POST["user_website"];
+    $social = $_POST["user_social"];
+    $ads = $_POST["user_ads"];
+    $goals = $_POST["user_goals"];
     $planType = $_POST["planType"];
 
     // E-mail de destino
     $to = 'marketing@seudestrave.com.br';
 
     // Assunto do e-mail
-    $subject = "Email site Destrave - Plano: $planType";
+    $subject = "Destrave Site: $planType";
 
-    // Construir a mensagem
-    $message = "Nome: $nome\n";
-    $message .= "E-mail: $email\n";
-    $message .= "Telefone: $telefone\n";
-    $message .= "Faturamento mensal médio: $revenue\n";
-    $message .= "Investimento em anúncios online e marketing: $marketing";
+    // Construir a mensagem com HTML
+    $message = "<p><strong>Nome Completo:</strong> $nome</p>";
+    $message .= "<p><strong>Melhor E-mail:</strong> $email</p>";
+    $message .= "<p><strong>Telefone para Contato:</strong> $telefone</p>";
+    $message .= "<p><strong>Site Atual (se houver):</strong> $website</p>";
+    $message .= "<p><strong>Instagram ou Página no Facebook (se houver):</strong> $social</p>";
+    $message .= "<p><strong>Faz Anúncios Online?:</strong> $ads</p>";
+    $message .= "<p><strong>Conte um pouco sobre seus objetivos com o site:</strong><br>$goals</p>";
 
     // Configurações de SMTP
     $mail = new PHPMailer(true);
@@ -44,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->addAddress($to);
 
         // Conteúdo do e-mail
-        $mail->isHTML(false); // Define se o e-mail será enviado como HTML ou texto simples
+        $mail->isHTML(true); // Define o e-mail para ser enviado como HTML
         $mail->Subject = $subject; // Define o assunto do e-mail
         $mail->Body = $message; // Define o corpo do e-mail
 

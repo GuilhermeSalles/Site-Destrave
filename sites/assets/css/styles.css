@@ -1356,7 +1356,6 @@ img {
 }
 
 /* Modal */
-/* Modal */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -1367,7 +1366,7 @@ img {
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-  padding: 1rem 0 1rem 2rem;
+  padding: 4rem 0 1rem 2rem;
 }
 
 .modal-content {

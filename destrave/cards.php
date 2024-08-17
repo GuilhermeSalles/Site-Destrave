@@ -16,124 +16,28 @@
             Escolha o Plano Perfeito para Você!
         </h2>
 
-        <section class="card container grid">
-            <div class="card__container grid">
-                <!--==================== CARD 1 ====================-->
-                <article class="card__content grid" aria-labelledby="basic-plan-title">
-
-                    <header class="card__header">
-                        <div class="card__header-circle grid">
-                            <img src="assets/img/free-coin.png" alt="Ícone do plano gratuito" class="card__header-img">
-                        </div>
-                        <span class="card__header-subtitle">Free plan</span>
-                        <h1 id="basic-plan-title" class="card__header-title">Basic</h1>
-                    </header>
-
-                    <ul class="card__list grid">
-                        <li class="card__list-item">
-                            <i class="uil uil-check card__list-icon" aria-hidden="true"></i>
-                            <p class="card__list-description">3 user requests</p>
-                        </li>
-                        <li class="card__list-item">
-                            <i class="uil uil-check card__list-icon" aria-hidden="true"></i>
-                            <p class="card__list-description">10 downloads per day</p>
-                        </li>
-                        <li class="card__list-item">
-                            <i class="uil uil-check card__list-icon" aria-hidden="true"></i>
-                            <p class="card__list-description">Daily content updates</p>
-                        </li>
-                        <li class="card__list-item">
-                            <i class="uil uil-check card__list-icon" aria-hidden="true"></i>
-                            <p class="card__list-description">Fully editable files</p>
-                        </li>
-                    </ul>
-
-                    <button class="card__button" aria-label="Choose the Basic plan">Choose this plan</button>
-                </article>
-
-                <!--==================== CARD 2 ====================-->
-                <article class="card__content grid" aria-labelledby="professional-plan-title">
-
-                    <header class="card__header">
-                        <div class="card__header-circle grid">
-                            <img src="assets/img/pro-coin.png" alt="Ícone do plano profissional" class="card__header-img">
-                        </div>
-                        <span class="card__header-subtitle">Most popular</span>
-                        <h1 id="professional-plan-title" class="card__header-title">Professional</h1>
-                    </header>
-
-                    <ul class="card__list grid">
-                        <li class="card__list-item">
-                            <i class="uil uil-check card__list-icon" aria-hidden="true"></i>
-                            <p class="card__list-description">100 user requests</p>
-                        </li>
-                        <li class="card__list-item">
-                            <i class="uil uil-check card__list-icon" aria-hidden="true"></i>
-                            <p class="card__list-description">Unlimited downloads</p>
-                        </li>
-                        <li class="card__list-item">
-                            <i class="uil uil-check card__list-icon" aria-hidden="true"></i>
-                            <p class="card__list-description">Unlock all features from our site</p>
-                        </li>
-                        <li class="card__list-item">
-                            <i class="uil uil-check card__list-icon" aria-hidden="true"></i>
-                            <p class="card__list-description">Daily content updates</p>
-                        </li>
-                        <li class="card__list-item">
-                            <i class="uil uil-check card__list-icon" aria-hidden="true"></i>
-                            <p class="card__list-description">Fully editable files</p>
-                        </li>
-                    </ul>
-
-                    <button class="card__button" aria-label="Choose the Professional plan">Choose this plan</button>
-                </article>
-
-                <!--==================== CARD 3 ====================-->
-                <article class="card__content grid" aria-labelledby="enterprise-plan-title">
-
-                    <header class="card__header">
-                        <div class="card__header-circle grid">
-                            <img src="assets/img/enterprise-coin.png" alt="Ícone do plano Enterprise" class="card__header-img">
-                        </div>
-                        <span class="card__header-subtitle">For agencies</span>
-                        <h1 id="enterprise-plan-title" class="card__header-title">Enterprise</h1>
-                    </header>
-
-                    <ul class="card__list grid">
-                        <li class="card__list-item">
-                            <i class="uil uil-check card__list-icon" aria-hidden="true"></i>
-                            <p class="card__list-description">Unlimited user requests</p>
-                        </li>
-                        <li class="card__list-item">
-                            <i class="uil uil-check card__list-icon" aria-hidden="true"></i>
-                            <p class="card__list-description">Unlimited downloads</p>
-                        </li>
-                        <li class="card__list-item">
-                            <i class="uil uil-check card__list-icon" aria-hidden="true"></i>
-                            <p class="card__list-description">Unlock all features from our site</p>
-                        </li>
-                        <li class="card__list-item">
-                            <i class="uil uil-check card__list-icon" aria-hidden="true"></i>
-                            <p class="card__list-description">Daily content updates</p>
-                        </li>
-                        <li class="card__list-item">
-                            <i class="uil uil-check card__list-icon" aria-hidden="true"></i>
-                            <p class="card__list-description">Fully editable files</p>
-                        </li>
-                    </ul>
-
-                    <button class="card__button" aria-label="Choose the Enterprise plan">Choose this plan</button>
-                </article>
+        <section class="plans-section container">
+            <div class="plan">
+                <img src="assets/img/1.png" alt="Plano Posicionamento" class="plan-image">
+                <button class="plan-button" data-plan="Posicionamento" aria-label="Escolher Plano">Escolher este plano</button>
+            </div>
+            <div class="plan">
+                <img src="assets/img/2.png" alt="Plano Performance" class="plan-image">
+                <button class="plan-button" data-plan="Performance" aria-label="Escolher Plano">Escolher este plano</button>
+            </div>
+            <div class="plan">
+                <img src="assets/img/3.png" alt="Plano Destrave Social" class="plan-image">
+                <button class="plan-button" data-plan="Destrave Social" aria-label="Escolher Plano">Escolher este plano</button>
             </div>
         </section>
     </section>
 
-    <!--==================== Modal ====================-->
+    <!--==================== MODAL ====================-->
     <div id="myModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
         <div class="modal-content" role="document">
             <span class="close" aria-label="Close modal">&times;</span>
             <h2 id="modalTitle">Formulário</h2>
-            <p style="padding: 2rem 0;">Olá! É ótimo vê-lo aqui! Por favor, dedique um momento para preencher
+            <p style="padding: 2rem 0;">Olá! Por favor, dedique um momento para preencher
                 este formulário com atenção. É uma oportunidade valiosa para a nossa equipe entender melhor seu
                 negócio e suas necessidades.</p>
             <form id="modalForm" action="processar_formulario.php" method="POST">
@@ -148,13 +52,16 @@
                 <label for="email">Qual é o seu principal e-mail?</label>
                 <input type="email" id="email" name="user_email" required aria-required="true"><br>
 
+                <label for="social">Qual é a sua principal rede social?</label>
+                <input type="text" id="social" name="user_social" required aria-required="true" placeholder="Ex: Instagram, Facebook"><br>
+
                 <label for="revenue">Qual o seu faturamento mensal médio?</label>
                 <select id="revenue" name="user_revenue" required aria-required="true">
                     <option value="">Selecione</option>
-                    <option value="menos_5000">Menos de R$ 5.000</option>
-                    <option value="5000_10000">R$ 5.000 - R$ 10.000</option>
-                    <option value="10000_20000">R$ 10.000 - R$ 20.000</option>
-                    <option value="mais_20000">Mais de R$ 20.000</option>
+                    <option value="menos_5000">Menos de R$ 30.000,00</option>
+                    <option value="5000_10000">R$ 30.000,00 - R$ 50.000,00</option>
+                    <option value="10000_20000">R$ 50.000,00 - R$ 100.000,00</option>
+                    <option value="mais_20000">Mais de R$ 100.000,00</option>
                     <option value="nao_invisto">Não invisto</option>
                 </select><br>
 
@@ -167,6 +74,7 @@
 
                 <button type="submit" class="card__button">Enviar</button>
             </form>
+
         </div>
     </div>
 
@@ -175,37 +83,27 @@
         var modal = document.getElementById("myModal");
 
         // Get the buttons that open the modal
-        var btns = document.getElementsByClassName("card__button");
+        var btns = document.querySelectorAll(".plan-button");
 
-        // Get the <button> element that closes the modal
+        // Get the <span> element that closes the modal
         var closeButton = document.querySelector(".close");
 
         // Get the hidden input field for the plan type
         var planTypeInput = document.getElementById("planType");
 
-        // Define plan types
-        var planTypes = {
-            "Basic": "basic",
-            "Professional": "professional",
-            "Enterprise": "enterprise"
-        };
-
         // When the user clicks the button, open the modal and set the plan type
-        for (let btn of btns) {
+        btns.forEach(function(btn) {
             btn.addEventListener('click', function() {
-                // Determine which plan was clicked
-                var planTitle = this.closest('.card__content').querySelector(".card__header-title").innerText;
-
-                // Set the hidden input field value based on the plan title
-                planTypeInput.value = planTypes[planTitle] || "";
+                // Set the hidden input field value to the selected plan
+                planTypeInput.value = this.getAttribute("data-plan");
 
                 // Open the modal
                 modal.style.display = "block";
                 modal.setAttribute("aria-hidden", "false");
             });
-        }
+        });
 
-        // When the user clicks on <button> (x), close the modal
+        // When the user clicks on <span> (x), close the modal
         closeButton.addEventListener('click', function() {
             modal.style.display = "none";
             modal.setAttribute("aria-hidden", "true");
@@ -219,7 +117,6 @@
             }
         });
     </script>
-
 
 </body>
 

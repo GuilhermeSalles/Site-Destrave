@@ -131,20 +131,16 @@
       <section class="home" id="home">
          <div class="home__container container">
             <div class="home__content">
-               <h1 class="home__title" style="color: hsl(335, 88%, 56%);">
-                  Ter muitos clientes será o <br>seu novo padrão!!
+               <h1 class="home__title" style="color: white">
+                  CONHEÇA O PODER DE UMA <br>ESTRATÉGIA DE <br>MARKETING DIGITAL
 
                </h1>
                <p class="home__description">
-                  A <span style="color: hsl(335, 88%, 56%);">Destrave Digital </span>oferece planos personalizados que
-                  se alinham perfeitamente com as necessidades do
-                  seu negócio.
+                  Descubra estratégias exclusivas que geram resultados reais para sua empresa.
 
                   <br>
                   <br>
-
-                  Extraímos o máximo de valor de cada investimento em mídias sociais, garantindo que você
-                  obtenha o melhor retorno possível com seus posts, reels, análises e relatórios.
+                  Vamos além do digital, com soluções personalizadas para cada necessidade.
                </p>
 
                <a href="#myModal" class="home__button botao" id="openModalButton">Converse com um Especialista</a>
@@ -343,12 +339,12 @@
 
       <br>
       <br>
-      <!--==================== Modal ====================-->
+      <!--==================== MODAL ====================-->
       <div id="myModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
          <div class="modal-content" role="document">
             <span class="close" aria-label="Close modal">&times;</span>
             <h2 id="modalTitle">Formulário</h2>
-            <p style="padding: 2rem 0;">Olá! É ótimo vê-lo aqui! Por favor, dedique um momento para preencher
+            <p style="padding: 2rem 0;">Olá! Por favor, dedique um momento para preencher
                este formulário com atenção. É uma oportunidade valiosa para a nossa equipe entender melhor seu
                negócio e suas necessidades.</p>
             <form id="modalForm" action="processar_formulario.php" method="POST">
@@ -363,13 +359,16 @@
                <label for="email">Qual é o seu principal e-mail?</label>
                <input type="email" id="email" name="user_email" required aria-required="true"><br>
 
+               <label for="social">Qual é a sua principal rede social?</label>
+               <input type="text" id="social" name="user_social" required aria-required="true" placeholder="Ex: Instagram, Facebook"><br>
+
                <label for="revenue">Qual o seu faturamento mensal médio?</label>
                <select id="revenue" name="user_revenue" required aria-required="true">
                   <option value="">Selecione</option>
-                  <option value="menos_5000">Menos de R$ 5.000</option>
-                  <option value="5000_10000">R$ 5.000 - R$ 10.000</option>
-                  <option value="10000_20000">R$ 10.000 - R$ 20.000</option>
-                  <option value="mais_20000">Mais de R$ 20.000</option>
+                  <option value="menos_5000">Menos de R$ 30.000,00</option>
+                  <option value="5000_10000">R$ 30.000,00 - R$ 50.000,00</option>
+                  <option value="10000_20000">R$ 50.000,00 - R$ 100.000,00</option>
+                  <option value="mais_20000">Mais de R$ 100.000,00</option>
                   <option value="nao_invisto">Não invisto</option>
                </select><br>
 
@@ -382,6 +381,7 @@
 
                <button type="submit" class="card__button">Enviar</button>
             </form>
+
          </div>
       </div>
 
@@ -399,7 +399,7 @@
          var planTypeInput = document.getElementById("planType");
 
          // Define the fixed plan type
-         var fixedPlanType = "orçamento social media";
+         var fixedPlanType = "social media - sem plano";
 
          // When the user clicks the button, open the modal and set the plan type
          for (let btn of btns) {

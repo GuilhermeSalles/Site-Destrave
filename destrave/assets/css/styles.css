@@ -69,6 +69,25 @@ a {
   text-decoration: none;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+.botao {
+  animation: pulse 2s infinite;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -663,6 +682,7 @@ button {
   bottom: 3rem;
 }
 /*=============== BREAKPOINTS ===============*/
+
 /* For small devices */
 @media screen and (max-width: 300px) {
   .container {
@@ -674,6 +694,7 @@ button {
     font-size: 1.75rem;
   }
 }
+
 @media screen and (min-width: 300px) {
   .container {
     margin-inline: 1rem;
@@ -731,8 +752,9 @@ button {
   }
 
   .home {
-    height: 100vh;
+    height: 90vh;
   }
+
   .about__container {
     padding-top: 1rem;
   }
@@ -835,15 +857,18 @@ button {
     display: grid;
     place-content: center;
   }
+
   .home__container,
   .about__container {
     grid-template-columns: repeat(2, 350px);
     padding-top: 0;
   }
+
   .home__content,
   .about__content {
     text-align: initial;
   }
+
   .home__title,
   .about__title {
     margin-inline: 0;
@@ -852,7 +877,7 @@ button {
   .about__image {
     width: 400px;
     top: 11rem;
-    left: -2.5rem; /*teste*/
+    left: -2.5rem;
   }
 
   .content2 {
@@ -862,7 +887,7 @@ button {
   .service__image {
     width: 370px;
     top: 18rem;
-    left: -1rem; /*teste*/
+    left: -1rem;
   }
 
   .simples__title2 {
@@ -871,13 +896,10 @@ button {
   }
 
   .simples__title3 {
-    margin-bottom: s1rem;
-  }
-
-  .simples__title4 {
     margin-bottom: 1rem;
   }
 
+  .simples__title4,
   .simples__title5 {
     margin-bottom: 1rem;
   }
@@ -885,13 +907,13 @@ button {
   .about__image2 {
     width: 420px;
     top: -2.75rem;
-    right: 2rem; /*teste*/
+    right: 2rem;
   }
 
   .about__image3 {
     width: 420px;
     top: 6rem;
-    left: 1rem; /*teste*/
+    left: 1rem;
   }
 }
 
@@ -900,6 +922,7 @@ button {
   .section__title {
     font-size: 2.25rem;
   }
+
   .imglogo {
     width: 160px;
     height: 140px;
@@ -917,12 +940,14 @@ button {
   .nav__close {
     display: none;
   }
+
   .nav__menu {
     width: 100%;
     display: flex;
     align-items: center;
     column-gap: 4.5rem;
   }
+
   .nav__list {
     margin-left: auto;
     flex-direction: row;
@@ -932,13 +957,13 @@ button {
   .about__image {
     width: 320px;
     top: 6rem;
-    right: 2rem; /*teste*/
+    right: 2rem;
   }
 
   .service__image {
     width: 380px;
     top: 18rem;
-    left: -1rem; /*teste*/
+    left: -1rem;
   }
 
   .simples__title2 {
@@ -946,10 +971,7 @@ button {
     margin-top: -2rem;
   }
 
-  .simples__title3 {
-    margin-bottom: 1rem;
-  }
-
+  .simples__title3,
   .simples__title5 {
     margin-bottom: 1rem;
   }
@@ -957,16 +979,17 @@ button {
   .about__image2 {
     width: 420px;
     top: -2.75rem;
-    right: 2rem; /*teste*/
+    right: 2rem;
   }
 
   .about__image3 {
     width: 420px;
     top: 6rem;
-    left: 3rem; /*teste*/
+    left: 3rem;
   }
 }
 
+/* For extra-large devices */
 @media screen and (min-width: 1152px) {
   .section__title {
     font-size: 2.25rem;
@@ -974,12 +997,14 @@ button {
   .container {
     margin-inline: auto;
   }
+
   .home__container,
   .about__container {
     grid-template-columns: 460px 650px;
     align-items: center;
     z-index: 5;
   }
+
   .home__subtitle,
   .about__subtitle {
     font-size: var(--normal-font-size);
@@ -1007,10 +1032,12 @@ button {
     font-size: var(--h3-font-size);
     margin-bottom: 3rem;
   }
+
   .home__images,
   .about__images {
     height: 450px;
   }
+
   .home__points {
     width: 100%;
     top: -2rem;
@@ -1021,15 +1048,14 @@ button {
     width: 450px;
   }
 
-  .about__image {
+  .about__image,
+  .about__image2 {
     width: 420px;
-    right: 2rem; /*teste*/
+    right: 2rem;
   }
 
   .about__image2 {
-    width: 420px;
     top: -2.75rem;
-    right: 2rem; /*teste*/
   }
 
   .home__planet-1 {
@@ -1061,7 +1087,7 @@ button {
 }
 
 /* For medium devices */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
   .services__container,
   .contact__container {
     grid-template-columns: 360px;
@@ -1073,7 +1099,7 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .services__container {
     grid-template-columns: repeat(2, 352px);
   }
@@ -1083,7 +1109,7 @@ button {
 }
 
 /* For large devices */
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1024px) and (max-width: 1151px) {
   .section {
     padding-block: 7rem 2rem;
   }
@@ -1094,6 +1120,7 @@ button {
   }
 }
 
+/* For extra-large devices */
 @media screen and (min-width: 1152px) {
   .container {
     margin-inline: auto;
@@ -1247,4 +1274,55 @@ button {
 
 .item8 {
   animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+.plans-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+}
+
+.plan-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.plan-button {
+  background-color: #6c63ff;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.plan-button:hover {
+  background-color: #5145cd;
+}
+
+@media screen and (min-width: 768px) {
+  .plans-section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .plan {
+    max-width: 32%;
+  }
 }

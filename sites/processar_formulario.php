@@ -10,10 +10,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST["user_name"];
     $email = $_POST["user_email"];
     $telefone = $_POST["user_tel"];
-    $website = $_POST["user_website"];
-    $social = $_POST["user_social"];
-    $ads = $_POST["user_ads"];
-    $goals = $_POST["user_goals"];
     $planType = $_POST["planType"];
 
     // E-mail de destino
@@ -26,10 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = "<p><strong>Nome Completo:</strong> $nome</p>";
     $message .= "<p><strong>Melhor E-mail:</strong> $email</p>";
     $message .= "<p><strong>Telefone para Contato:</strong> $telefone</p>";
-    $message .= "<p><strong>Site Atual (se houver):</strong> $website</p>";
-    $message .= "<p><strong>Instagram ou Página no Facebook (se houver):</strong> $social</p>";
-    $message .= "<p><strong>Faz Anúncios Online?:</strong> $ads</p>";
-    $message .= "<p><strong>Conte um pouco sobre seus objetivos com o site:</strong><br>$goals</p>";
+    $message .= "<p><strong>Plano Selecionado:</strong> $planType</p>";
 
     // Configurações de SMTP
     $mail = new PHPMailer(true);

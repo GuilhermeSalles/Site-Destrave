@@ -80,7 +80,7 @@
 
             <div class="nav__btns">
                 <!-- Theme change button -->
-                <i class="ri-moon-line change-theme" id="theme-button" aria-label="Trocar Tema"></i>
+                <!-- <i class="ri-moon-line change-theme" id="theme-button" aria-label="Trocar Tema"></i> -->
 
                 <div class="nav__toggle" id="nav-toggle" aria-label="Abrir Menu">
                     <i class="ri-menu-line"></i>
@@ -98,23 +98,20 @@
 
                 <div class="home__data">
                     <h1 class="home__title">
-                        Lucros Crescentes Serão <br> Sua Nova Realidade
+                        TRANSFORME SUA PRESENÇA ONLINE
                     </h1>
                     <p class="home__description">
-                        🚀 Aumente suas vendas e facilite a gestão do seu negócio. Seu site será a escolha preferida dos
-                        seus clientes.
+                        🚀 Tenha um Site Profissional que Converte e Impulsiona suas Vendas!
                         <br>
                         <br>
-                        🌐 A Destrave Digital desenvolve sites de vendas online alinhados com as necessidades da sua
-                        empresa.
-                        <br>
-                        <br>
-                        💡 Criamos sites de vendas online eficientes e intuitivos, utilizando as melhores ferramentas do
-                        mercado para maximizar seu retorno.
+                        🌐 Seu Site Profissional, Pronto para Converter.
+                        Desenvolvemos sites que não apenas impressionam, 
+                        mas que também geram vendas e fidelizam seus clientes.
+                        
                     </p>
 
                     <a href="#plans" class="button button--flex" aria-label="Conheça nossos Planos">
-                        Conheça nossos Planos <i class="ri-arrow-right-down-line button__icon" aria-hidden="true"></i>
+                        Quero orçamento de site! <i class="ri-arrow-right-down-line button__icon" aria-hidden="true"></i>
                     </a>
                 </div>
 
@@ -179,7 +176,7 @@
                     </ul>
 
                     <a href="#plans" class="button--link button--flex" aria-label="Conheça nossos Planos">
-                        Conheça nossos Planos <i class="ri-arrow-right-down-line button__icon" aria-hidden="true"></i>
+                        Quero orçamento de site! <i class="ri-arrow-right-down-line button__icon" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -487,9 +484,9 @@
         <div id="plan-modal" class="modal">
             <div class="modal-content" role="document">
                 <span class="close" aria-label="Close modal">&times;</span>
-                <h2 id="modalTitle">Informações de Contato</h2>
-                <p style="padding: 2rem 0;">Olá! É ótimo vê-lo aqui! Por favor, preencha este formulário para que
-                    possamos entender melhor suas necessidades e oferecer a melhor solução para seu negócio.</p>
+                <h2 id="modalTitle">Informações</h2>
+                <p style="padding: 2rem 0;">Por favor, preencha este formulário para que
+                    possamos entrar em contato com você!</p>
                 <form id="modalForm" action="processar_formulario.php" method="POST">
                     <input type="hidden" id="planType" name="planType">
 
@@ -505,25 +502,6 @@
                     <input type="tel" id="phone" name="user_tel" required aria-required="true"
                         placeholder="Digite seu telefone para contato"><br>
 
-                    <label for="website">Site Atual (se houver):</label>
-                    <input type="url" id="website" name="user_website" placeholder="Digite o URL do seu site atual"><br>
-
-                    <label for="social">Instagram ou Página no Facebook (se houver):</label>
-                    <input type="text" id="social" name="user_social"
-                        placeholder="Digite seu Instagram ou página do Facebook"><br>
-
-                    <label for="ads">Faz Anúncios Online?</label>
-                    <select id="ads" name="user_ads" required aria-required="true">
-                        <option value="">Selecione</option>
-                        <option value="sim">Sim</option>
-                        <option value="nao">Não</option>
-                        <option value="pretendo">Pretendo</option>
-                    </select><br>
-
-                    <label for="goals">Conte um pouco sobre seus objetivos com o site:</label>
-                    <textarea id="goals" name="user_goals" rows="3" required aria-required="true"
-                        placeholder="Descreva seus objetivos com o site"></textarea><br>
-
                     <button type="submit" class="card__button">Enviar</button>
                 </form>
 
@@ -532,7 +510,7 @@
 
             <script>
                 // Get the modal
-                var modal = document.getElementById("myModal");
+                var modal = document.getElementById("plan-modal");
 
                 // Get the buttons that open the modal
                 var btns = document.getElementsByClassName("card__button");

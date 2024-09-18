@@ -53,13 +53,13 @@
             align-items: center;
             margin: 0;
             font-family: 'Poppins', sans-serif;
-            background-color: #0A1652;
+            background-color: #11152b;
             height: 120dvh;
             margin-top: 3rem;
         }
 
         #profile-container {
-            background-color: #0A1652;
+            background-color: #11152b;
             border-radius: 10px;
             padding: 1rem 1rem 0rem;
             text-align: center;
@@ -80,13 +80,24 @@
             transform: translateX(-50%);
             background-color: #fff;
             border: 5px solid transparent;
-            box-shadow: 0 0 15px rgba(0, 123, 255, 0.75);
+            box-shadow: 0 0 15px rgba(128, 0, 255, 0.75);
+            /* Neon roxo */
             transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #logo {
+            margin-top: 10px;
+            width: 200px;
+            /* Ajuste para o tamanho desejado */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            filter: drop-shadow(0 4px 6px rgba(128, 0, 255, 0.75));
+            /* Adiciona drop-shadow */
         }
 
         h2 {
             margin-top: 60px;
-            /* Espaço para a imagem circular */
             margin-bottom: 0.5rem;
             color: #e0e0e0;
         }
@@ -97,6 +108,7 @@
         }
 
         .title {
+            margin-top: -20px;
             font-size: 1.2rem;
             font-weight: 600;
             margin-bottom: 1rem;
@@ -111,7 +123,8 @@
             text-decoration: none;
             color: inherit;
             display: block;
-            box-shadow: 0 0 15px rgba(0, 123, 255, 0.75);
+            box-shadow: 0 0 15px rgba(128, 0, 255, 0.75);
+            /* Neon roxo */
             transition: box-shadow 0.3s ease;
         }
 
@@ -119,11 +132,13 @@
             width: 100%;
             height: auto;
             display: block;
-            box-shadow: 0 0 15px rgba(0, 123, 255, 0.75);
+            box-shadow: 0 0 15px rgba(128, 0, 255, 0.75);
+            /* Neon roxo */
         }
 
         .link-box:hover {
-            box-shadow: 0 0 15px rgba(0, 123, 255, 0.75);
+            box-shadow: 0 0 15px rgba(128, 0, 255, 0.75);
+            /* Neon roxo */
         }
 
         /* Media query para dispositivos móveis */
@@ -137,21 +152,23 @@
 
 <body>
     <div id="profile-container">
-        <img id="profile-pic" src="img/fav.png" alt="Foto do Perfil de Fernando Sabino">
-        <h2 id="profile-name">Destrave Suas Vendas</h2>
+        <img id="profile-pic" src="img/destrave.jpg" alt="Foto do Perfil de Fernando Sabino">
+        <img id="logo" src="img/logo.png" alt="Logo Destrave">
 
-        <div class="title">Clique nos cards para mais informações.</div>
+
+        <div class="title">Aqui você conhece um pouco dos nossos serviços:</div>
+
         <a class="link-box" href="destrave/" aria-label="Link para o site 1">
-            <img src="img/acessoria.jpg" alt="Link 1">
+            <img src="img/acessoria.png" alt="Link 1">
         </a>
         <a class="link-box" href="sites/" aria-label="Link para o site 2">
-            <img src="img/sites.jpg" alt="Link 2">
+            <img src="img/sites.png" alt="Link 2">
         </a>
         <a class="link-box" href="https://form.respondi.app/FrGsTFGb" aria-label="Link para o site 3">
-            <img src="img/mentoria.jpg" alt="Link 3">
+            <img src="img/mentoria.png" alt="Link 3">
         </a>
-        <a class="link-box" href="#" aria-label="Link para o site 3">
-            <img src="img/curso.gif" alt="Link 3">
+        <a class="link-box" href="#" aria-label="Link para o site 4">
+            <img src="img/curso.gif" alt="Link 4">
         </a>
     </div>
 </body>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentoria em Anúncios Online para Geração de Leads e Vendas | Destrave Digital</title>
+    <link rel="icon" href="https://www.seudestrave.com.br/mentoria/favicon.png" type="image/png">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Destrave suas vendas com nossa mentoria em anúncios online. Aprenda a criar campanhas de alta performance para gerar leads e aumentar suas vendas de forma estratégica.">
+    <meta name="keywords"
+        content="mentoria em anúncios online, geração de leads, vendas automáticas, campanhas online, tráfego pago, marketing digital, Destrave Digital, campanhas de alta performance">
+    <meta name="author" content="Destrave Digital">
+
+    <!-- Localização (SEO Local) -->
+    <meta name="geo.region" content="BR-SP">
+    <meta name="geo.placename" content="Campinas, São Paulo">
+    <meta name="geo.position" content="-22.932923;-47.073845">
+    <meta name="ICBM" content="-22.932923, -47.073845">
+
+    <!-- Open Graph Meta Tags para Redes Sociais (Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Mentoria em Anúncios Online para Geração de Leads e Vendas | Destrave Digital">
+    <meta property="og:description"
+        content="Transforme suas estratégias de anúncios online com nossa mentoria especializada. A equipe da Destrave Digital vai te ensinar a criar campanhas de sucesso para aumentar suas vendas e capturar leads qualificados.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.seudestrave.com.br/mentoria">
+    <meta property="og:image" content="https://www.destravedigital.com.br/mentoria/funil.png">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mentoria em Anúncios Online para Geração de Leads e Vendas | Destrave Digital">
+    <meta name="twitter:description"
+        content="Aprenda a criar anúncios online de alta performance e dobrar suas vendas com a mentoria Destrave Digital. Transforme suas campanhas de anúncios e comece a gerar resultados agora.">
+    <meta name="twitter:image" content="https://www.destravedigital.com.br/mentoria/funil.png">
+    <meta name="twitter:site" content="@DestraveDigital">
+
+    <!-- Link para a folha de estilo -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+        /* HERO SECTION */
+        .hero-section {
+            position: relative;
+            width: 100%;
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('bg_subtle.png') no-repeat center center/cover;
+            padding: 20px;
+        }
+
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        h3 {
+            margin-top: 60px;
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 48%;
+            /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            width: 100%;
+            /* Ajusta para 100% em dispositivos móveis */
+            max-width: 980px;
+            background-color: #000;
+            margin: 77px auto;
+            /* Centraliza o vídeo */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Seção Funil */
+        .section-funil {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+
+        .section-funil .image-container {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .section-funil .image-container img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .section-funil .text-container {
+            flex: 2;
+            padding-left: 20px;
+            color: #333;
+        }
+
+        .section-funil .text-container h2 {
+            color: #1498FE;
+            font-size: 20px;
+            font-weight: 100;
+            margin-bottom: -55px;
+        }
+
+        .section-funil .text-container h3 {
+            font-size: 50px;
+            color: #022044;
+            margin-bottom: 15px;
+            font-weight: 900;
+            line-height: 100%;
+            letter-spacing: 0.02rem;
+        }
+
+        .section-funil .text-container p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .section-funil .text-container .p1 {
+            font-size: 16px;
+            margin-bottom: 20px;
+            font-weight: 800;
+            color: #1498FE;
+        }
+
+        .section-funil .text-container ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .section-funil .text-container ul li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .section-funil .text-container ul li::before {
+            content: '✔';
+            color: #0066cc;
+            margin-right: 10px;
+        }
+
+        /* Última Seção - Investimento */
+        .section-investment {
+            text-align: center;
+            background-color: #002d62;
+            padding: 40px 20px;
+            color: #fff;
+        }
+
+        .section-investment h4 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .section-investment p {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+
+        .button-vip {
+            background-color: #58D68D;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .button-vip:hover {
+            background-color: #45b56f;
+            cursor: pointer;
+        }
+
+        /* Estilização do Copyright */
+        .copyright {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            color: #333;
+            background-color: #f0f0f0;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .section-funil .text-container h2 {
+                font-size: 16px;
+            }
+
+            .section-funil .text-container h3 {
+                font-size: 28px;
+                line-height: 1.1;
+            }
+
+            .section-funil .text-container p,
+            .section-funil .text-container ul li {
+                font-size: 14px;
+                line-height: 1.4;
+            }
+
+            .section-funil .text-container ul li::before {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            .video-container {
+                max-width: 100%;
+            }
+
+            .section-funil {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .section-funil .image-container {
+                padding-right: 0;
+                padding-bottom: 20px;
+            }
+
+            .section-funil .text-container {
+                padding-left: 0;
+            }
+
+            .section-investment h4 {
+                font-size: 18px;
+            }
+
+            .section-investment p {
+                font-size: 16px;
+            }
+
+            .button-vip {
+                font-size: 16px;
+                padding: 12px 25px;
+            }
+        }
+
+        #message-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #cta-button {
+            background-color: #58D68D;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        #cta-button:hover {
+            background-color: #45b56f;
+            cursor: pointer;
+        }
+
+        #pulse-message {
+            font-size: 17px;
+            font-weight: 900;
+            color: #FF6347;
+            /* Cor pulsante */
+            margin-top: 10px;
+            display: block;
+            animation: pulse 2s infinite;
+        }
+
+        /* Animação de pulso para a mensagem menor */
+        @keyframes pulse {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+
+    <script>
+        // Função para exibir o botão e a mensagem pulsante após 5 minutos (300000 ms)
+        setTimeout(function () {
+            document.getElementById("initial-message").style.display = 'none'; // Esconde a mensagem inicial
+            document.getElementById("cta-button").style.display = 'inline-block'; // Exibe o botão
+            document.getElementById("pulse-message").style.display = 'block'; // Exibe a mensagem pulsante
+        }, 10000); // 5 minutos em milissegundos
+    </script>
+
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h3>CHEGOU A HORA DA SUA EMPRESA FINALMENTE DESTRAVAR E VENDER TODOS OS DIAS…</h3>
+            <h1>Aprenda a criar ANÚNCIOS para Gerar Leads e Vendas Todos os Dias…</h1>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/TnKtxk9MxUo"
+                    title="Como gerar leads e vendas com funis automáticos" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div id="message-container">
+                <p id="initial-message">Logo uma oportunidade vai aparecer!</p>
+                <a href="#" id="cta-button" style="display:none;" class="button-vip">
+                    Inscreva-se Agora e Dobre Suas Vendas!
+                </a>
+                <span id="pulse-message" style="display:none;">Garanta antes que o botão desapareça!</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SEÇÃO FUNIL -->
+    <section class="section-funil">
+        <div class="image-container">
+            <img src="funil.png" alt="Exemplo de Funil de Vendas Automático para Empresas" loading="lazy">
+        </div>
+        <div class="text-container">
+            <h2>APRENDA A FAZER ANÚNCIOS EM POUCOS DIAS...</h2>
+            <h3>Mentoria individual de Anúncios Instagram e Facebook Ads</h3>
+            <p class="p1">Domine as ferramentas de anúncios e tenha clientes todos os dias!</p>
+            <p>Com nossa mentoria personalizada, você terá em mãos o funil de vendas perfeito para gerar leads e vendas
+                de forma consistente todos os dias. Ao longo de 6 sessões, vou orientar você passo a passo, garantindo
+                que sua estratégia de anúncios esteja otimizada e pronta para escalar.</p>
+            <p>Vou te ensinar de forma individual e exclusiva a criar e implementar cada etapa, garantindo que seu funil
+                funcione de maneira eficiente e automatizada. Aqui está o que você receberá:</p>
+            <ul>
+                <li><strong>Funil Completo:</strong> Você aprenderá a criar um funil automatizado que gere leads
+                    qualificados e vendas, do início ao fim, com acompanhamento prático e personalizado.</li>
+                <li><strong>Configuração de Campanhas:</strong> Te ajudaremos a configurar e otimizar seus anúncios,
+                    garantindo que eles estejam prontos para atrair os clientes certos e aumentar suas conversões. Após
+                    a criação, você receberá suporte dedicado para otimizações contínuas.</li>
+                <li><strong>Gravação da aula:</strong> Você terá acesso às sessões gravadas de toda mentoria por um ano.
+                </li>
+            </ul>
+            <p>Não deixe que as dúvidas ou falta de conhecimento travem o crescimento do seu negócio no digital. Nossa
+                mentoria foi criada para acelerar sua implementação e escalar suas vendas de forma eficaz, com o suporte
+                de especialistas em anúncios Meta Ads.</p>
+        </div>
+    </section>
+
+    <!-- ÚLTIMA SEÇÃO - INVESTIMENTO -->
+    <section class="section-investment" style="background: url('bg_subtle.png') no-repeat center center/cover;">
+        <h4>Cupom de desconto de R$500,00 para você começar a destravar suas vendas agora.</h4>
+        <a href="https://wa.me/5519988408183?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20como%20me%20tornar%20um%20Cliente%20VIP%20e%20receber%20o%20Funil%20Completo%20da%20Destrave%20Digital."
+            class="button-vip"
+            aria-label="Entre em contato via WhatsApp para se tornar um cliente VIP e receber seu funil de vendas completo">
+            Quero minha mentoria individual ➞
+        </a>
+    </section>
+
+
+    <!-- COPYRIGHT -->
+    <footer class="copyright">
+        <p>© 2024 Destrave Digital. Todos os direitos reservados.</p>
+    </footer>
+
+
+</body>
+
+</html>

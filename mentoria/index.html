@@ -40,6 +40,26 @@
     <!-- Link para a folha de estilo -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '505535902430445');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=505535902430445&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
     <style>
         * {
             margin: 0;
@@ -98,7 +118,7 @@
 
         .video-container {
             position: relative;
-            padding-bottom: 48%;
+            padding-bottom: 46%;
             /* 16:9 Aspect Ratio */
             height: 0;
             overflow: hidden;
@@ -106,7 +126,7 @@
             /* Ajusta para 100% em dispositivos móveis */
             max-width: 980px;
             background-color: #000;
-            margin: 77px auto;
+            margin: 40px auto;
             /* Centraliza o vídeo */
         }
 
@@ -217,7 +237,7 @@
             color: #fff;
             font-size: 18px;
             font-weight: 700;
-            padding: 15px 30px;
+            padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
             display: inline-block;
@@ -225,6 +245,22 @@
 
         .button-vip:hover {
             background-color: #45b56f;
+            cursor: pointer;
+        }
+
+        .button-vip2 {
+            background-color: #f1af09;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 5px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .button-vip2:hover {
+            background-color: #daa520;
             cursor: pointer;
         }
 
@@ -263,10 +299,12 @@
             }
 
             h3 {
+                margin-top: -2px;
                 font-size: 18px;
             }
 
             .video-container {
+                margin-top: -1px;
                 max-width: 100%;
             }
 
@@ -296,6 +334,11 @@
                 font-size: 16px;
                 padding: 12px 25px;
             }
+
+            .button-vip2 {
+                font-size: 16px;
+                padding: 12px 25px;
+            }
         }
 
         #message-container {
@@ -317,6 +360,23 @@
 
         #cta-button:hover {
             background-color: #45b56f;
+            cursor: pointer;
+        }
+
+        #cta-button2 {
+            background-color: #f1af09;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: -5px;
+        }
+
+        #cta-button2:hover {
+            background-color: #daa520;
             cursor: pointer;
         }
 
@@ -344,16 +404,110 @@
                 opacity: 1;
             }
         }
-    </style>
 
-    <script>
-        // Função para exibir o botão e a mensagem pulsante após 5 minutos (300000 ms)
-        setTimeout(function () {
-            document.getElementById("initial-message").style.display = 'none'; // Esconde a mensagem inicial
-            document.getElementById("cta-button").style.display = 'inline-block'; // Exibe o botão
-            document.getElementById("pulse-message").style.display = 'block'; // Exibe a mensagem pulsante
-        }, 10000); // 5 minutos em milissegundos
-    </script>
+        /* Modal */
+        .modal {
+            color: #000;
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 1rem;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 5% auto;
+            padding: 2rem;
+            border: 1px solid #cce7ff;
+            width: 50%;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .close {
+            color: #007bff;
+            float: right;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        /* Form */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        label {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #cce7ff;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+
+        /* Modernized Submit Button */
+        button.card__button {
+            background-color: #4a90e2;
+            /* Light blue */
+            color: #ffffff;
+            /* White text */
+            font-weight: bold;
+            font-size: 1rem;
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        button.card__button:hover {
+            background-color: #357ABD;
+            /* Darker blue on hover */
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+            /* Slight shadow on hover */
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .modal-content {
+                width: 90%;
+                margin: 5% auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .modal-content {
+                width: 95%;
+                padding: 1.5rem;
+            }
+        }
+    </style>
 
 </head>
 
@@ -364,18 +518,80 @@
         <div class="hero-content">
             <h3>CHEGOU A HORA DA SUA EMPRESA FINALMENTE DESTRAVAR E VENDER TODOS OS DIAS…</h3>
             <h1>Aprenda a criar ANÚNCIOS para Gerar Leads e Vendas Todos os Dias…</h1>
-
+            <p>Assista ao video abaixo para conhecer nosso método:</p>
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/TnKtxk9MxUo"
+                <iframe src="https://www.youtube.com/embed/xDXWyuXoSBQ"
                     title="Como gerar leads e vendas com funis automáticos" frameborder="0" allowfullscreen></iframe>
             </div>
-
+            <a href="https://wa.me/5519988408183?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20como%20me%20tornar%20um%20Cliente%20VIP%20e%20receber%20o%20Funil%20Completo%20da%20Destrave%20Digital."
+                id="cta-button2" class="button-vip2">
+                Clique aqui após assistir o video!
+            </a>
             <div id="message-container">
                 <p id="initial-message">Logo uma oportunidade vai aparecer!</p>
-                <a href="https://wa.me/5519988408183?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20como%20me%20tornar%20um%20Cliente%20VIP%20e%20receber%20o%20Funil%20Completo%20da%20Destrave%20Digital."
-                    id="cta-button" style="display:none;" class="button-vip">
-                    Inscreva-se Agora e Dobre Suas Vendas!
+                <a href="javascript:void(0);" id="cta-button" style="display:none;" class="button-vip">
+                    Garanta o cupom de R$500,00
                 </a>
+
+                <!--==================== MODAL ====================-->
+                <div id="myModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+                    <div class="modal-content" role="document">
+                        <span class="close" aria-label="Close modal">&times;</span>
+                        <h2 id="modalTitle">Formulário</h2>
+                        <p style="padding: 2rem 0;">Preencha suas informações abaixo para garantir o desconto de
+                            R$500,00 e participar do Programa Destrave.</p>
+                        <form id="modalForm" action="processar_formulario.php" method="POST">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="user_name" placeholder="Digite seu nome" required
+                                aria-required="true"><br>
+
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="user_email" placeholder="Digite seu e-mail" required
+                                aria-required="true"><br>
+
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="user_tel" placeholder="Digite seu telefone" required
+                                aria-required="true"><br>
+
+                            <button type="submit" class="card__button">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+
+                <script>
+                    // Função para exibir o botão e a mensagem pulsante após 5 minutos (300000 ms)
+                    setTimeout(function () {
+                        document.getElementById("initial-message").style.display = 'none'; // Esconde a mensagem inicial
+                        document.getElementById("cta-button").style.display = 'inline-block'; // Exibe o botão
+                        document.getElementById("pulse-message").style.display = 'block'; // Exibe a mensagem pulsante
+                    }, 1000); // 1320000 milissegundos (22 minutos)
+
+                    // Modal logic
+                    var modal = document.getElementById("myModal");
+                    var btn = document.getElementById("cta-button");
+                    var closeButton = document.querySelector(".close");
+
+                    // Quando o usuário clicar no botão, abrir o modal
+                    btn.addEventListener('click', function () {
+                        modal.style.display = "block";
+                        modal.setAttribute("aria-hidden", "false");
+                    });
+
+                    // Quando o usuário clicar em (x), fechar o modal
+                    closeButton.addEventListener('click', function () {
+                        modal.style.display = "none";
+                        modal.setAttribute("aria-hidden", "true");
+                    });
+
+                    // Quando o usuário clicar fora do modal, fechar o modal
+                    window.addEventListener('click', function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                            modal.setAttribute("aria-hidden", "true");
+                        }
+                    });
+                </script>
+
                 <span id="pulse-message" style="display:none;">Garanta antes que o botão desapareça!</span>
             </div>
         </div>
@@ -414,8 +630,8 @@
     <!-- ÚLTIMA SEÇÃO - INVESTIMENTO -->
     <section class="section-investment" style="background: url('bg_subtle.png') no-repeat center center/cover;">
         <h4>Cupom de desconto de R$500,00 para você começar a destravar suas vendas agora.</h4>
-        <a href="https://wa.me/5519988408183?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20como%20me%20tornar%20um%20Cliente%20VIP%20e%20receber%20o%20Funil%20Completo%20da%20Destrave%20Digital."
-            class="button-vip"
+        <p>Digite: <span style="font-weight: 900;">DESTRAVE500</span> para garantir seu desconto no checkout.</p>
+        <a href="" class="button-vip"
             aria-label="Entre em contato via WhatsApp para se tornar um cliente VIP e receber seu funil de vendas completo">
             Quero minha mentoria individual ➞
         </a>

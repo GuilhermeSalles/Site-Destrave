@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Envia o e-mail
         $mail->send();
-        echo '<script>alert("Mensagem enviada com sucesso!"); window.location.href = "../destrave";</script>';
+        echo '<script>alert("Mensagem enviada com sucesso!"); window.location.href = "../mentoria";</script>';
     } catch (Exception $e) {
         echo '<script>alert("Erro ao enviar mensagem. Por favor, tente novamente mais tarde."); window.location.href = "../destrave";</script>';
     }

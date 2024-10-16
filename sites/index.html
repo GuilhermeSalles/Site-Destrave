@@ -46,6 +46,27 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '505535902430445');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=505535902430445&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+     
 </head>
 
 <body>
@@ -80,7 +101,8 @@
 
             <div class="nav__btns">
                 <!-- Theme change button -->
-                <i class="ri-moon-line change-theme" style="display: none;" id="theme-button" aria-label="Trocar Tema"></i>
+                <i class="ri-moon-line change-theme" style="display: none;" id="theme-button"
+                    aria-label="Trocar Tema"></i>
 
                 <div class="nav__toggle" id="nav-toggle" aria-label="Abrir Menu">
                     <i class="ri-menu-line"></i>
@@ -105,13 +127,14 @@
                         <br>
                         <br>
                         🌐 Seu Site Profissional, Pronto para Converter.
-                        Desenvolvemos sites que não apenas impressionam, 
+                        Desenvolvemos sites que não apenas impressionam,
                         mas que também geram vendas e fidelizam seus clientes.
-                        
+
                     </p>
 
                     <a href="#plans" class="button button--flex" aria-label="Conheça nossos Planos">
-                        Quero orçamento de site! <i class="ri-arrow-right-down-line button__icon" aria-hidden="true"></i>
+                        Quero orçamento de site! <i class="ri-arrow-right-down-line button__icon"
+                            aria-hidden="true"></i>
                     </a>
                 </div>
 
@@ -176,7 +199,8 @@
                     </ul>
 
                     <a href="#plans" class="button--link button--flex" aria-label="Conheça nossos Planos">
-                        Quero orçamento de site! <i class="ri-arrow-right-down-line button__icon" aria-hidden="true"></i>
+                        Quero orçamento de site! <i class="ri-arrow-right-down-line button__icon"
+                            aria-hidden="true"></i>
                     </a>
                 </div>
             </div>

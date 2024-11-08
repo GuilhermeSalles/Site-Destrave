@@ -66,21 +66,29 @@
     <noscript><img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=505535902430445&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
-     
+
     <style>
+        :root {
+            --bg-color: #11152b;
+            --text-color: #e0e0e0;
+            --highlight-color: rgba(128, 0, 255, 0.75);
+        }
+
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             margin: 0;
             font-family: 'Poppins', sans-serif;
-            background-color: #11152b;
-            height: 120dvh;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            height: 100vh;
             margin-top: 3rem;
         }
 
         #profile-container {
-            background-color: #11152b;
+            background-color: var(--bg-color);
             border-radius: 10px;
             padding: 1rem 1rem 0rem;
             text-align: center;
@@ -101,26 +109,30 @@
             transform: translateX(-50%);
             background-color: #fff;
             border: 5px solid transparent;
-            box-shadow: 0 0 15px rgba(128, 0, 255, 0.75);
-            /* Neon roxo */
+            box-shadow: 0 0 15px var(--highlight-color);
             transition: border-color 0.3s ease, box-shadow 0.3s ease;
         }
 
         #logo {
             margin-top: 10px;
             width: 200px;
-            /* Ajuste para o tamanho desejado */
             display: block;
             margin-left: auto;
             margin-right: auto;
-            filter: drop-shadow(0 4px 6px rgba(128, 0, 255, 0.75));
-            /* Adiciona drop-shadow */
+            filter: drop-shadow(0 4px 6px var(--highlight-color));
+            margin-bottom: -25px;
+        }
+
+        h1 {
+            color: var(--text-color);
+            font-size: clamp(1.5rem, 2vw, 2rem);
+            margin-top: 1rem;
         }
 
         h2 {
             margin-top: 60px;
             margin-bottom: 0.5rem;
-            color: #e0e0e0;
+            color: var(--text-color);
         }
 
         #followers {
@@ -130,7 +142,7 @@
 
         .title {
             margin-top: -20px;
-            font-size: 1.2rem;
+            font-size: clamp(1.2rem, 2vw, 1.5rem);
             font-weight: 600;
             margin-bottom: 1rem;
             color: #ffffff;
@@ -144,22 +156,19 @@
             text-decoration: none;
             color: inherit;
             display: block;
-            box-shadow: 0 0 15px rgba(128, 0, 255, 0.75);
-            /* Neon roxo */
-            transition: box-shadow 0.3s ease;
+            box-shadow: 0 0 15px var(--highlight-color);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
         }
 
         .link-box img {
             width: 100%;
             height: auto;
             display: block;
-            box-shadow: 0 0 15px rgba(128, 0, 255, 0.75);
-            /* Neon roxo */
         }
 
         .link-box:hover {
-            box-shadow: 0 0 15px rgba(128, 0, 255, 0.75);
-            /* Neon roxo */
+            box-shadow: 0 0 20px var(--highlight-color);
+            transform: scale(1.05);
         }
 
         /* Media query para dispositivos móveis */
@@ -173,23 +182,21 @@
 
 <body>
     <div id="profile-container">
-        <img id="profile-pic" src="img/destrave.jpg" alt="Foto do Perfil de Fernando Sabino">
-        <img id="logo" src="img/logo.png" alt="Logo Destrave">
+        <img id="profile-pic" src="img/destrave.jpg"
+            alt="Foto do perfil de Fernando Sabino, fundador da Destrave Digital">
+        <img id="logo" src="img/logo.png" alt="Logo da empresa Destrave Digital">
 
-
-        <div class="title">Aqui você conhece um pouco dos nossos serviços:</div>
-
-        <a class="link-box" href="destrave/" aria-label="Link para o site 1">
-            <img src="img/acessoria.png" alt="Link 1">
+        <a class="link-box" href="destrave/" aria-label="Acessoria de marketing para empresas com Destrave Digital">
+            <img src="img/acessoria.jpg" alt="Imagem representativa da acessoria de marketing da Destrave Digital">
         </a>
-        <a class="link-box" href="sites/" aria-label="Link para o site 2">
-            <img src="img/sites.png" alt="Link 2">
+        <a class="link-box" href="mentoria/" aria-label="Mentoria individual em anúncios com Destrave Digital">
+            <img src="img/mentoria.jpg" alt="Imagem representativa da mentoria em anúncios da Destrave Digital">
         </a>
-        <a class="link-box" href="mentoria/" aria-label="Link para o site 3">
-            <img src="img/mentoria.png" alt="Link 3">
+        <a class="link-box" href="sites/" aria-label="Desenvolvimento de sites profissionais com Destrave Digital">
+            <img src="img/sites.jpg" alt="Imagem representativa dos sites desenvolvidos pela Destrave Digital">
         </a>
-        <a class="link-box" href="#" aria-label="Link para o site 4">
-            <img src="img/curso.gif" alt="Link 4">
+        <a class="link-box" href="#" aria-label="Cursos e treinamentos com Destrave Digital">
+            <img src="img/curso.gif" alt="Imagem representativa de cursos oferecidos pela Destrave Digital">
         </a>
     </div>
 </body>

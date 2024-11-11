@@ -132,18 +132,15 @@
          <div class="home__container container">
             <div class="home__content">
                <h1 class="home__title" style="color: white">
-                  CONHEÇA O PODER DE UMA <br>ESTRATÉGIA DE <br>MARKETING DIGITAL
-
+                  ANÚNCIOS ESTRATÉGICOS PARA<br>RESULTADOS REAIS
                </h1>
                <p class="home__description">
-                  Descubra estratégias exclusivas que geram resultados reais para sua empresa.
-
-                  <br>
-                  <br>
-                  Vamos além do digital, com soluções personalizadas para cada necessidade.
+                  Transforme o seu negócio com uma estratégia de anúncios que atrai, engaja e converte.
+                  <br><br>
+                  Oferecemos 12 criativos e 12 legendas otimizadas para vendas, além da opção de site profissional, garantindo uma presença digital completa e efetiva. Invista no crescimento com uma abordagem estratégica, não em milagres.
                </p>
 
-               <a href="#myModal" class="home__button botao" id="openModalButton">Converse com um Especialista</a>
+               <a href="https://wa.me/5519988408183?text=Olá%2C%20gostaria%20de%20tirar%20dúvidas%20sobre%20a%20assessoria!" class="home__button botao" id="openModalButton">Quero Mais Informações</a>
             </div>
 
             <div class="home__images">
@@ -158,97 +155,74 @@
          <img src="assets/img/clouds-2.svg" alt="image" class="home__cloud-2">
       </section>
 
-
       <!--==================== ABOUT ====================-->
       <section class="section about" id="about">
 
          <h3 class="section__title simples__title2">
-            Impulsione <span>Vendas e seu Lucro</span><br>com nossa assessoria.
+            Impulsione <span>Suas Vendas e Lucro</span><br>com Anúncios Estratégicos
          </h3>
          <div class="about__container container">
             <div class="about__images">
-               <img src="assets/img/sociais.png" alt="image" class="about__image">
+               <img src="assets/img/sociais.png" alt="Serviço de anúncios digitais" class="about__image">
             </div>
 
             <div class="about__content content2">
-
                <h1 class="about__title title2">
                   <span>
-                     Qual o compromisso do <span style="color: hsl(335, 88%, 56%);">DESTRAVE</span> com você?
+                     O Compromisso da <span style="color: hsl(335, 88%, 56%);">DESTRAVE</span> com Você
                   </span>
                </h1>
                <p class="about__description">
-                  Nosso compromisso é impulsionar suas vendas e seu faturamento.
-                  <br>
-                  Vamos além do usual no marketing digital, analisando profundamente seu negócio
-                  para maximizar seu potencial de mercado e resultados financeiros.
-                  <br>
-                  <br>
-                  Reconhecemos a importância de uma estratégia digital eficaz e seu impacto direto no crescimento do seu
-                  empreendimento.
-                  <br>
-                  Oferecemos soluções personalizadas que vão além de melhorar sua presença online;
-                  elas transformam essa presença em um aumento real de vendas e faturamento.
+                  Nossa missão é aumentar suas vendas e seu faturamento com estratégias de marketing digital que geram resultados reais.
+                  <br><br>
+                  Analisamos seu negócio profundamente para criar anúncios que atraem, engajam e convertem, maximizando seu potencial de mercado.
+                  <br><br>
+                  Sabemos que uma estratégia digital bem executada é um investimento que impacta diretamente o crescimento. Por isso, nossas soluções são personalizadas e focadas em transformar presença online em resultados concretos para o seu negócio.
                </p>
-               <a href="#myModal" class="home__button botao" id="openModalButton">Converse com um Especialista</a>
+               <a href="#myModal" class="home__button botao" id="openModalButton">Quero Mais Informações</a>
             </div>
          </div>
 
       </section>
-
       <!--==================== SERVICES ====================-->
       <section class="services2 section" id="services">
 
          <h2 class="section__subtitle simples__title">
-            Conheça todos os <span>serviços que oferecemos</span>
+            Conheça Nossos <span>Serviços Exclusivos</span>
          </h2>
 
          <h3 class="section__title simples__title simples__title4">
-            Estruturamos o marketing da sua <br>empresa com <span>soluções feitas sob medida.</span>
+            Soluções de Marketing <br>feitas sob medida para o seu negócio.
          </h3>
          <div class="services__container container grid">
 
             <article class="services__card">
                <i class="ri-megaphone-fill services__icon"></i>
                <h2 class="services__title">
-                  Gestão de Redes Sociais
+                  Anúncios Estratégicos
                </h2>
                <p class="services__description">
-                  Criamos e gerenciamos suas contas nas principais redes sociais, garantindo uma presença forte e
-                  engajada. Conteúdo relevante e interações que fazem a diferença.
-               </p>
-            </article>
-
-            <article class="services__card">
-               <i class="ri-line-chart-fill services__icon"></i>
-               <h2 class="services__title">
-                  Assessoria de Conteúdo
-               </h2>
-               <p class="services__description">
-                  Fornecemos orientação e suporte contínuo para que suas postagens sejam sempre de alta qualidade,
-                  alinhadas com os objetivos da sua marca.
+                  Planejamos e gerenciamos seus anúncios nas plataformas Google, Meta e TikTok, criando campanhas focadas em resultados reais para atrair e converter clientes.
                </p>
             </article>
 
             <article class="services__card">
                <i class="ri-user-search-line services__icon"></i>
                <h2 class="services__title">
-                  Produção de Conteúdo
+                  Produção de Criativos e Legendas
                </h2>
                <p class="services__description">
-                  Desenvolvemos posts e reels criativos e atrativos, que capturam a atenção do seu público e
-                  impulsionam o engajamento nas suas redes sociais.
+                  Fornecemos 12 criativos de alta qualidade e 12 legendas estratégicas, desenvolvidos para captar atenção e gerar engajamento, levando o público a agir.
                </p>
             </article>
 
             <article class="services__card">
                <i class="ri-store-2-line services__icon"></i>
                <h2 class="services__title">
-                  Gestão de Anúncios
+                  Criação de Sites
                </h2>
                <p class="services__description">
-                  Gerenciamos seus anúncios nas plataformas Google, Meta e TikTok, criando campanhas que
-                  realmente convertem e trazem resultados visíveis para o seu negócio.
+                  Desenvolvemos sites otimizados e profissionais para quem deseja ampliar a presença digital e facilitar o processo de conversão de visitantes em clientes.
                </p>
             </article>
 
@@ -258,19 +232,17 @@
                   Monitoramento e Relatórios
                </h2>
                <p class="services__description">
-                  Oferecemos monitoramento contínuo e relatórios detalhados para que você acompanhe o desempenho das
-                  suas campanhas e faça ajustes necessários em tempo real.
+                  Oferecemos monitoramento contínuo e relatórios detalhados para que você acompanhe o desempenho de suas campanhas e faça ajustes estratégicos em tempo real.
                </p>
             </article>
 
             <article class="services__card">
-               <i class="ri-pages-line services__icon"></i>
+               <i class="ri-line-chart-fill services__icon"></i>
                <h2 class="services__title">
-                  Consultoria e Suporte
+                  Consultoria Estratégica
                </h2>
                <p class="services__description">
-                  Estamos sempre disponíveis para oferecer consultoria e suporte contínuo, ajudando você a superar
-                  desafios e alcançar seus objetivos de marketing.
+                  Nossa equipe está disponível para oferecer consultoria e suporte contínuos, garantindo que suas estratégias estejam alinhadas com os objetivos de crescimento do seu negócio.
                </p>
             </article>
 
@@ -280,18 +252,15 @@
          </div>
       </section>
 
-
-
-
       <!--==================== SERVICES2 ====================-->
       <section class="services section" id="forwhat">
 
          <h3 class="section__title simples__title simples__title4">
-            Assessoria <span>Destrave Digital</span> é ideal para:
+            A Assessoria <span>Destrave Digital</span> é Ideal para:
          </h3>
          <div class="about__container container">
             <div class="about__images">
-               <img src="assets/img/empresa.png" alt="image" class="service__image">
+               <img src="assets/img/empresa.png" alt="Imagem de Empresa" class="service__image">
             </div>
 
             <div class="about__content">
@@ -300,8 +269,11 @@
                   <article class="services__card2">
                      <i class="ri-bar-chart-grouped-line services__icon2"></i>
                      <h2 class="services__title2">
-                        Indústria e Comércio
+                        Indústrias e Comércio
                      </h2>
+                     <p class="services__description2">
+                        Empresas que buscam expandir seu alcance e impactar clientes em potencial com anúncios estratégicos e presença digital forte.
+                     </p>
                   </article>
 
                   <article class="services__card2">
@@ -309,6 +281,9 @@
                      <h2 class="services__title2">
                         Profissionais Autônomos
                      </h2>
+                     <p class="services__description2">
+                        Profissionais que desejam atrair mais clientes e fortalecer sua marca pessoal com anúncios e conteúdo de alta conversão.
+                     </p>
                   </article>
 
                   <article class="services__card2">
@@ -316,6 +291,9 @@
                      <h2 class="services__title2">
                         Prestadores de Serviços
                      </h2>
+                     <p class="services__description2">
+                        Negócios focados em serviços que querem aumentar a visibilidade e se posicionar como referência, atraindo clientes qualificados.
+                     </p>
                   </article>
 
                   <article class="services__card2">
@@ -323,7 +301,9 @@
                      <h2 class="services__title2">
                         Negócios Locais
                      </h2>
-
+                     <p class="services__description2">
+                        Empresas locais que desejam impactar sua comunidade com campanhas focadas e estratégias que convertem em vendas.
+                     </p>
                   </article>
 
                </div>
@@ -365,11 +345,11 @@
                <label for="revenue">Qual o seu faturamento mensal médio?</label>
                <select id="revenue" name="user_revenue" required aria-required="true">
                   <option value="">Selecione</option>
-                  <option value="menos_5000">Menos de R$ 30.000,00</option>
-                  <option value="5000_10000">R$ 30.000,00 - R$ 50.000,00</option>
-                  <option value="10000_20000">R$ 50.000,00 - R$ 100.000,00</option>
-                  <option value="mais_20000">Mais de R$ 100.000,00</option>
-                  <option value="nao_invisto">Não invisto</option>
+                  <option value="menos_30000">Menos de R$ 30.000,00</option>
+                  <option value="30000_500000">R$ 30.000,00 - R$ 50.000,00</option>
+                  <option value="500000_1000000">R$ 50.000,00 - R$ 100.000,00</option>
+                  <option value="mais_1000000">Mais de R$ 100.000,00</option>
+                  <option value="nao_sei">Não Sei</option>
                </select><br>
 
                <label for="marketing">Você já investe em anúncios online e marketing?</label>

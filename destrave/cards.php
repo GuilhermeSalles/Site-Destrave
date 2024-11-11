@@ -16,21 +16,14 @@
             Escolha o Plano Perfeito para Você!
         </h2>
 
-        <section class="plans-section container">
-            <div class="plan">
-                <img src="assets/img/1.png" alt="Plano Posicionamento" class="plan-image">
-                <button class="plan-button" data-plan="Posicionamento" aria-label="Escolher Plano">Escolher este plano</button>
-            </div>
+        <section class="plans-section container" style="display: flex; justify-content: center; align-items: center;">
             <div class="plan">
                 <img src="assets/img/2.png" alt="Plano Performance" class="plan-image">
                 <button class="plan-button" data-plan="Performance" aria-label="Escolher Plano">Escolher este plano</button>
             </div>
-            <div class="plan">
-                <img src="assets/img/3.png" alt="Plano Destrave Social" class="plan-image">
-                <button class="plan-button" data-plan="Destrave Social" aria-label="Escolher Plano">Escolher este plano</button>
-            </div>
         </section>
     </section>
+
 
     <!--==================== MODAL ====================-->
     <div id="myModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">

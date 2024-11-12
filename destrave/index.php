@@ -252,7 +252,7 @@
 
          </div>
          <div class="section__subtitle">
-            <a href="#myModal" class="home__button botao" id="openModalButton">Converse com um Especialista</a>
+            <a href="#myModal" class="home__button botao" id="openModalButton">Quero Mais Informações</a>
          </div>
       </section>
 
@@ -317,7 +317,7 @@
          <br>
          <br>
          <div class="section__subtitle">
-            <a href="#myModal" class="home__button botao" id="openModalButton">Converse com um Especialista</a>
+            <a href="#myModal" class="home__button botao" id="openModalButton">Quero Mais Informações</a>
          </div>
       </section>
 

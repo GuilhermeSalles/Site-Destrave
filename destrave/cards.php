@@ -13,7 +13,7 @@
     <!--==================== QUESTIONS ====================-->
     <section class="questions section" id="plans" aria-labelledby="plans-title">
         <h2 id="plans-title" class="section__title-center questions__title container" style="color: white;">
-            Escolha o Plano Perfeito para Você!
+            O Plano Perfeito para Você!
         </h2>
 
         <section class="plans-section container" style="display: flex; justify-content: center; align-items: center;">

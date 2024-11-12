@@ -132,12 +132,15 @@
          <div class="home__container container">
             <div class="home__content">
                <h1 class="home__title" style="color: white">
-                  ANÚNCIOS ESTRATÉGICOS PARA<br>RESULTADOS REAIS
+               ANÚNCIOS ESTRATÉGICOS <br>PARA <br>RESULTADOS REAIS
+
                </h1>
                <p class="home__description">
                   Transforme o seu negócio com uma estratégia de anúncios que atrai, engaja e converte.
-                  <br><br>
-                  Oferecemos 12 criativos e 12 legendas otimizadas para vendas, além da opção de site profissional, garantindo uma presença digital completa e efetiva. Invista no crescimento com uma abordagem estratégica, não em milagres.
+
+                  <br>
+                  <br>
+                  Garantindo uma presença digital completa e efetiva. Invista no crescimento com uma abordagem estratégica, não em milagres.
                </p>
 
                <a href="https://wa.me/5519988408183?text=Olá%2C%20gostaria%20de%20tirar%20dúvidas%20sobre%20a%20assessoria!" class="home__button botao" id="openModalButton">Quero Mais Informações</a>
@@ -154,6 +157,7 @@
          <img src="assets/img/clouds-1.svg" alt="image" class="home__cloud-1">
          <img src="assets/img/clouds-2.svg" alt="image" class="home__cloud-2">
       </section>
+
 
       <!--==================== ABOUT ====================-->
       <section class="section about" id="about">

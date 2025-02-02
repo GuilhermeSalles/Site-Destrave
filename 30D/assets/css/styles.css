@@ -1,32 +1,15 @@
-/*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 5rem;
-
-  /* Colors */
-  --first-color: hsl(228, 58%, 48%);
-  --first-color-alt: hsl(237, 28%, 38%);
-  --second-color: hsl(235, 88%, 56%);
-  --second-color-alt: hsl(242, 78%, 38%);
-  --white-color: hsl(0, 0%, 100%);
-  --text-color: hsl(252, 100%, 87%);
-  --body-color: hsl(228, 58%, 22%);
-  --input-color: hsl(235, 46%, 31%);
-
-  /* Font sizes */
-  --biggest-font-size: 2rem;
-  --normal-font-size: 0.938rem;
-  --small-font-size: 0.813rem;
-
-  /* Font weights */
-  --font-medium: 500;
-  --font-bold: 700;
-
-  /* Z-index levels */
-  --z-tooltip: 10;
-  --z-fixed: 100;
+  --first-color: #2c3e50; /* Azul escuro */
+  --first-color-alt: #1a252f; /* Azul mais escuro */
+  --second-color: #3498db; /* Azul claro */
+  --second-color-alt: #2980b9; /* Azul médio */
+  --white-color: #ffffff; /* Branco */
+  --text-color: #ecf0f1; /* Cinza claro */
+  --body-color: #34495e; /* Azul acinzentado */
+  --input-color: #2c3e50; /* Azul escuro */
+  --success-color: #27ae60; /* Verde */
+  --warning-color: #e67e22; /* Laranja */
 }
 
 /*=============== BASE ===============*/
@@ -37,24 +20,31 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-  background: linear-gradient(120deg, #2a292b, #041c31, #0b6078);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--body-color);
   color: var(--text-color);
+  line-height: 1.6;
 }
 
-ul {
-  list-style: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: var(--white-color);
 }
 
 a {
   text-decoration: none;
+  color: var(--second-color);
 }
 
-button {
-  border: none;
-  cursor: pointer;
+a:hover {
+  color: var(--second-color-alt);
 }
 
 /*=============== HERO SECTION ===============*/
@@ -67,49 +57,41 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
-  overflow: hidden;
+  min-height: 100vh;
+  background: linear-gradient(
+    120deg,
+    var(--first-color),
+    var(--body-color),
+    var(--first-color-alt)
+  );
 }
 
 .hero-section .logo {
-  max-width: 200px;
-  margin-bottom: -0.5rem;
-}
-
-.hero-section .headline {
-  width: 80%;
-  margin-bottom: 2rem;
+  max-width: 300px;
+  margin-bottom: 1rem;
 }
 
 .hero-section .headline h3 {
-  font-size: 2rem;
-  font-weight: var(--font-bold);
+  font-size: 2.5rem;
+  font-weight: 600;
   margin-bottom: 1rem;
   color: var(--white-color);
 }
 
-.hero-section .headline h1 {
-  font-size: 3rem;
-  font-weight: var(--font-bold);
-  line-height: 1.3;
-  color: var(--white-color);
-}
-
 .hero-section .headline span {
-  color: var(--first-color);
+  color: var(--second-color);
+  font-weight: 600;
 }
 
 .hero-section .video-container {
   width: 100%;
-  max-width: 800px; /* Ajuste conforme necessário */
-  margin: 0 auto; /* Centraliza o vídeo */
+  max-width: 800px;
+  margin: 0 auto;
   padding-bottom: 1rem;
 }
 
 .hero-section .video-container iframe {
   aspect-ratio: 16 / 9;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   border: 0;
@@ -117,290 +99,560 @@ button {
 }
 
 .hero-section .cta-button {
-  background-color: var(--white-color);
-  color: #2c3e50;
-  font-weight: var(--font-bold);
+  background-color: var(--second-color);
+  color: var(--white-color);
+  font-weight: 600;
   padding: 1rem 2rem;
   border-radius: 25px;
-  border: 2px solid var(--first-color);
+  border: 2px solid var(--second-color);
   transition: transform 0.3s ease, background-color 0.3s ease;
+  margin-top: 1.5rem;
 }
 
 .hero-section .cta-button:hover {
-  background-color: var(--first-color);
-  color: var(--white-color);
+  background-color: var(--second-color-alt);
   transform: translateY(-3px);
 }
 
-/*=============== PAYMENT ICON ===============*/
-.payment-icons {
+.hero-section .payment-icons {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
 }
 
-.payment-icons img {
-  max-width: 180%; /* Limita a largura máxima da imagem para 90% da largura do contêiner */
-  height: auto; /* Mantém a proporção da imagem */
-  display: block; /* Remove o espaço abaixo da imagem */
-  transition: transform 0.3s ease; /* Transição suave para efeito de zoom */
-}
-
-/* Aumenta o tamanho da imagem quando em telas grandes */
-@media (min-width: 768px) {
-  .payment-icons img {
-    max-width: 80%; /* Para telas maiores, a imagem pode ocupar até 80% da largura */
-  }
-}
-
-@media (min-width: 1024px) {
-  .payment-icons img {
-    max-width: 100%; /* Para telas extra grandes, ocupa até 70% da largura */
-  }
-}
-
-
-/*=============== SECTION FUNIL ===============*/
-.section-funil {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.section-funil .text-container {
-  max-width: 800px;
-  padding: 0 20px;
-}
-/* Conteúdo interno */
-.section-funil .text-container {
-  max-width: 800px;
-  padding: 0 20px;
-}
-.section-funil h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  font-weight: bold;
-  color: var(--primary-color);
-}
-
-.section-funil p {
-  line-height: 1.6;
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  color: var(--white-color);
-}
-
-.section-funil span {
-  font-weight: bold;
-  color: var(--first-color);
-}
-
-.section-funil .cta-button {
-  background-color: var(--white-color);
-  color: #2c3e50;
-  font-weight: var(--font-bold);
-  padding: 1rem 2rem;
-  border-radius: 25px;
-  border: 2px solid var(--first-color);
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  margin-top: 1rem;
-}
-
-.section-funil .cta-button:hover {
-  background-color: var(--first-color);
-  color: var(--white-color);
-  transform: translateY(-3px);
-}
-
-.section-funil .card-icons {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 1.5rem;
-}
-
-/*=============== SECTION INVESTMENT ===============*/
-.section-investment {
-  padding: 3rem 1rem;
-  text-align: center;
-  background: url("bg_subtle.png") no-repeat center center/cover;
-  color: var(--white-color);
-}
-
-.section-investment h4 {
-  font-size: 1.5rem;
-  font-weight: var(--font-bold);
-  margin-bottom: 1rem;
-}
-
-.section-investment p {
-  font-size: var(--normal-font-size);
-}
-
-.section-investment .button-vip {
-  display: inline-block;
-  background-color: var(--first-color);
-  color: var(--white-color);
-  font-weight: var(--font-bold);
-  padding: 1rem 2rem;
-  border-radius: 5px;
+.hero-section .payment-icons img {
+  max-width: 180%;
+  height: auto;
+  display: block;
   transition: transform 0.3s ease;
 }
 
-.section-investment .button-vip:hover {
+/*=============== SECTION FUNIL ===============*/
+.section-funil {
+  padding: 4rem 1rem;
+  text-align: center;
   background-color: var(--first-color-alt);
+}
+
+.section-funil .text-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-funil h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--second-color);
+}
+
+.section-funil p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.section-funil span {
+  font-weight: 600;
+  color: var(--second-color);
+}
+
+.section-funil .cta-button {
+  background-color: var(--second-color);
+  color: var(--white-color);
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  border: 2px solid var(--second-color);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin-top: 1.5rem;
+}
+
+.section-funil .cta-button:hover {
+  background-color: var(--second-color-alt);
   transform: translateY(-3px);
+}
+
+.section-funil .payment-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.section-funil .payment-icons img {
+  max-width: 180%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/*=============== SECTION VALORES E GARANTIA ===============*/
+.section-valores-garantia {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: var(--body-color);
+  color: var(--white-color);
+}
+
+.section-valores-garantia .valores-garantia-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: var(--first-color-alt);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Lado Esquerdo: Valores */
+.section-valores-garantia .valores-content {
+  flex: 1;
+  background: linear-gradient(
+    135deg,
+    #ffd7002e,
+    #ffa50000
+  ); /* Gradiente com transparência */
+  padding: 2rem;
+  border-radius: 10px;
+  border: 2px solid #ffa500; /* Borda amarela */
+  text-align: center; /* Centralizado */
+}
+
+.section-valores-garantia .preco-original {
+  font-size: 2rem; /* Tamanho maior */
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.section-valores-garantia .preco-original .riscado {
+  text-decoration: line-through;
+  color: #e74c3c; /* Vermelho */
+}
+
+.section-valores-garantia .preco-promocional {
+  font-size: 1.5rem; /* Tamanho maior */
+  margin-bottom: 0.5rem;
+}
+
+.section-valores-garantia .preco-parcelado {
+  font-size: 2.5rem; /* Tamanho maior */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.section-valores-garantia .preco-parcelado .verde {
+  color: #2ecc71; /* Verde */
+}
+
+.section-valores-garantia .preco-vista {
+  font-size: 2rem; /* Tamanho maior */
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.section-valores-garantia .preco-vista .verde {
+  color: #2ecc71; /* Verde */
+}
+
+.section-valores-garantia .detalhes {
+  font-size: 1.2rem; /* Tamanho maior */
+  margin-bottom: 1.5rem;
+}
+
+.section-valores-garantia .garantia-texto {
+  font-size: 1.1rem; /* Tamanho maior */
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.section-valores-garantia .garantia-dias {
+  font-size: 1.3rem; /* Tamanho maior */
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.section-valores-garantia .button-container {
+  text-align: center; /* Centralizado */
+}
+
+.section-valores-garantia .cta-button {
+  background-color: var(--second-color);
+  color: var(--white-color);
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  border: 2px solid var(--second-color);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin-top: 1.5rem;
+  display: inline-block;
+}
+
+.section-valores-garantia .cta-button:hover {
+  background-color: var(--second-color-alt);
+  transform: translateY(-3px);
+}
+
+.section-valores-garantia .payment-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.section-valores-garantia .payment-icons img {
+  max-width: 180%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Lado Direito: Garantia */
+.section-valores-garantia .garantia-content {
+  flex: 1;
+  text-align: center;
+  padding: 2rem;
+}
+
+.section-valores-garantia .garantia-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--white-color);
+}
+
+.section-valores-garantia .selo-garantia {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.section-valores-garantia .garantia-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/*=============== BREAKPOINTS RESPONSIVOS ===============*/
+@media (max-width: 767.98px) {
+  .section-valores-garantia .valores-garantia-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-valores-garantia .valores-content {
+    text-align: center;
+  }
+
+  .section-valores-garantia .selo-garantia {
+    max-width: 120px;
+  }
+}
+/*=============== SECTION GARANTIA ===============*/
+.section-garantia {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: var(--first-color-alt);
+}
+
+.section-garantia .garantia-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-garantia h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+.section-garantia p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.section-garantia .cta-button {
+  background-color: var(--second-color);
+  color: var(--white-color);
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  border: 2px solid var(--second-color);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.section-garantia .cta-button:hover {
+  background-color: var(--second-color-alt);
+  transform: translateY(-3px);
+}
+
+/*=============== SECTION DEPOIMENTOS ===============*/
+.section-depoimentos {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: var(--body-color);
+}
+
+.section-depoimentos .depoimentos-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-depoimentos h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+.section-depoimentos .depoimentos-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.section-depoimentos .depoimento {
+  background-color: var(--first-color-alt);
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 45%;
+}
+
+.section-depoimentos .depoimento-foto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.section-depoimentos .depoimento p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.section-depoimentos .depoimento-nome {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--second-color);
+}
+
+/*=============== SECTION PROFESSOR ===============*/
+.section-professor {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: var(--first-color-alt);
+  color: var(--white-color);
+}
+
+.section-professor .professor-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-professor h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: var(--second-color);
+}
+
+.section-professor .professor-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  text-align: left;
+}
+
+.section-professor .professor-image {
+  flex: 1;
+  text-align: center;
+}
+
+.section-professor .professor-foto {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3); /* Box-shadow azul bem fraco */
+  transition: transform 0.3s ease;
+}
+
+.section-professor .professor-foto:hover {
+  transform: scale(1.05);
+}
+
+.section-professor .professor-texto {
+  flex: 2;
+}
+
+.section-professor .professor-texto h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--white-color);
+}
+
+.section-professor .professor-texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.section-professor .professor-texto ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-professor strong {
+  color: var(--second-color);
+}
+
+.section-professor .professor-texto ul li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.section-professor .button-container {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.section-professor .cta-button {
+  background-color: var(--second-color);
+  color: var(--white-color);
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  border: 2px solid var(--second-color);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: inline-block;
+}
+
+.section-professor .cta-button:hover {
+  background-color: var(--second-color-alt);
+  transform: translateY(-3px);
+}
+
+/*=============== BREAKPOINTS RESPONSIVOS ===============*/
+@media (max-width: 767.98px) {
+  .section-professor .professor-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-professor .professor-texto ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .section-professor .professor-texto ul li {
+    text-align: center;
+  }
 }
 
 /*=============== FOOTER ===============*/
 footer.copyright {
   padding: 1rem;
   text-align: center;
-  background-color: var(--first-color-alt);
+  background-color: var(--first-color);
   color: var(--white-color);
-  font-size: var(--small-font-size);
+  font-size: 0.9rem;
 }
 
 /*=============== BREAKPOINTS RESPONSIVOS ===============*/
-/* Tamanhos de dispositivos */
-/* Extra pequeno (smartphones em modo retrato, menos de 576px) */
 @media (max-width: 575.98px) {
-  .hero-section .headline h1 {
+  .hero-section .headline h3 {
+    font-size: 1.5rem;
+  }
+
+  .section-funil h2 {
     font-size: 1.8rem;
   }
-  .section-funil .image-container img {
-    max-width: 56%;
-    margin-top: -75px;
+
+  .section-valores .selo-garantia {
+    width: 100px;
+    height: 100px;
+    top: -50px;
   }
 
-  .hero-section {
-    margin-top: -4rem;
+  .section-depoimentos .depoimentos-grid {
+    flex-direction: column;
   }
 
-  .hero-section .headline h3 {
-    font-size: 1.2rem;
+  .section-depoimentos .depoimento {
+    width: 100%;
   }
 
-  .hero-section .cta-button {
-    padding: 0.8rem 1.5rem;
-    font-size: var(--normal-font-size);
+  .section-professor .professor-content {
+    flex-direction: column;
   }
 
-  .hero-section .video-container {
-    max-width: 100%;
+  .section-professor .professor-foto {
+    width: 200px;
+    height: 200px;
   }
 
-  .section-funil .text-container h2,
-  .section-funil .text-container h3 {
-    font-size: 1.2rem;
-  }
-
-  .section-investment h4 {
-    font-size: 1.2rem;
-  }
-
-  .section-investment p {
-    font-size: var(--small-font-size);
+  .section-professor p {
+    text-align: center;
   }
 }
 
-/* Pequenos dispositivos (smartphones, entre 576px e 768px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .hero-section .headline h1 {
+  .hero-section .headline h3 {
     font-size: 2rem;
   }
 
-  .hero-section .headline h3 {
-    font-size: 1.5rem;
+  .section-funil h2 {
+    font-size: 2rem;
   }
 
-  .hero-section .video-container {
-    max-width: 90%;
-  }
-
-  .section-funil .text-container h2,
-  .section-funil .text-container h3 {
-    font-size: 1.5rem;
-  }
-
-  .section-investment h4 {
-    font-size: 1.5rem;
+  .section-valores .selo-garantia {
+    width: 120px;
+    height: 120px;
+    top: -60px;
   }
 }
 
-/* Dispositivos médios (tablets, entre 768px e 992px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .hero-section .headline h1 {
+  .hero-section .headline h3 {
     font-size: 2.5rem;
   }
 
-  .hero-section .headline h3 {
-    font-size: 1.8rem;
+  .section-funil h2 {
+    font-size: 2.5rem;
   }
 
-  .hero-section .video-container {
-    max-width: 80%;
-  }
-
-  .section-funil {
-    padding: 2rem 1.5rem;
-  }
-
-  .section-funil .text-container h2 {
-    font-size: 1.8rem;
+  .section-valores .selo-garantia {
+    width: 140px;
+    height: 140px;
+    top: -70px;
   }
 }
 
-/* Grandes dispositivos (desktops pequenos, entre 992px e 1200px) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .hero-section .headline h1 {
+  .hero-section .headline h3 {
     font-size: 3rem;
   }
 
-  .hero-section .headline h3 {
-    font-size: 2rem;
-  }
-
-  .hero-section .video-container {
-    max-width: 70%;
-  }
-
-  .section-funil .text-container h2 {
-    font-size: 2rem;
-  }
-
-  .section-funil .text-container h3 {
-    font-size: 1.8rem;
+  .section-funil h2 {
+    font-size: 3rem;
   }
 }
 
-/* Extra grandes dispositivos (monitores grandes, acima de 1200px) */
 @media (min-width: 1200px) {
-  .hero-section .headline h1 {
+  .hero-section .headline h3 {
     font-size: 3.5rem;
   }
 
-  .hero-section .headline h3 {
-    font-size: 2.5rem;
-  }
-
-  .hero-section .video-container {
-    max-width: 60%;
-  }
-
-  .section-funil {
-    padding: 4rem 2rem;
-  }
-
-  .section-investment h4 {
-    font-size: 2rem;
-  }
-
-  .section-investment p {
-    font-size: var(--normal-font-size);
+  .section-funil h2 {
+    font-size: 3.5rem;
   }
 }

@@ -57,7 +57,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 60vh;
   background: linear-gradient(
     120deg,
     var(--first-color),
@@ -67,8 +67,9 @@ a:hover {
 }
 
 .hero-section .logo {
-  max-width: 300px;
-  margin-bottom: 1rem;
+  max-width: 200px;
+  margin-bottom: -2rem;
+  margin-top: -2rem;
 }
 
 .hero-section .headline h3 {
@@ -122,7 +123,7 @@ a:hover {
 }
 
 .hero-section .payment-icons img {
-  max-width: 180%;
+  max-width: 100%;
   height: auto;
   display: block;
   transition: transform 0.3s ease;
@@ -148,7 +149,7 @@ a:hover {
 }
 
 .section-funil p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
   color: var(--text-color);
@@ -183,7 +184,7 @@ a:hover {
 }
 
 .section-funil .payment-icons img {
-  max-width: 180%;
+  max-width: 100%;
   height: auto;
   display: block;
   transition: transform 0.3s ease;
@@ -198,30 +199,25 @@ a:hover {
 }
 
 .section-valores-garantia .valores-garantia-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  background-color: var(--first-color-alt);
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--first-color-alt);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Lado Esquerdo: Valores */
 .section-valores-garantia .valores-content {
-  flex: 1;
-  background: linear-gradient(
-    135deg,
-    #ffd7002e,
-    #ffa50000
-  ); /* Gradiente com transparência */
-  padding: 2rem;
-  border-radius: 10px;
-  border: 2px solid #ffa500; /* Borda amarela */
-  text-align: center; /* Centralizado */
+    flex: 1;
+    background: linear-gradient(135deg, #ffd7002e, #ffa50000);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 2px solid #ffa500;
+    text-align: center;
+    margin-right: 1rem; /* Adicionado para espaçamento controlado */
 }
 
 .section-valores-garantia .preco-original {
@@ -241,7 +237,7 @@ a:hover {
 }
 
 .section-valores-garantia .preco-parcelado {
-  font-size: 2.5rem; /* Tamanho maior */
+  font-size: 1.5rem; /* Tamanho maior */
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -251,7 +247,7 @@ a:hover {
 }
 
 .section-valores-garantia .preco-vista {
-  font-size: 2rem; /* Tamanho maior */
+  font-size: 1.5rem; /* Tamanho maior */
   font-weight: 600;
   margin-bottom: 1.5rem;
 }
@@ -405,7 +401,7 @@ a:hover {
 }
 
 .section-depoimentos h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1.5rem;
   font-weight: 600;
   color: var(--white-color);
@@ -457,10 +453,17 @@ a:hover {
 }
 
 .section-professor h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin-bottom: 1.5rem;
   font-weight: 600;
   color: var(--second-color);
+}
+
+.section-professor .payment-icons img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
 .section-professor .professor-content {
@@ -492,7 +495,7 @@ a:hover {
 }
 
 .section-professor .professor-texto h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   color: var(--white-color);
 }
@@ -570,7 +573,7 @@ footer.copyright {
 /*=============== BREAKPOINTS RESPONSIVOS ===============*/
 @media (max-width: 575.98px) {
   .hero-section .headline h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .section-funil h2 {

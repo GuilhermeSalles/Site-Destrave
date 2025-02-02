@@ -302,7 +302,7 @@ a:hover {
 }
 
 .section-valores-garantia .payment-icons img {
-  max-width: 180%;
+  max-width: 100%;
   height: auto;
   display: block;
   transition: transform 0.3s ease;

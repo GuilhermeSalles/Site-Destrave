@@ -67,8 +67,7 @@ a:hover {
 }
 
 .hero-section .logo {
-  max-width: 200px;
-  margin-bottom: -2rem;
+  max-width: 60px;
   margin-top: -2rem;
 }
 
@@ -103,11 +102,12 @@ a:hover {
   background-color: var(--second-color);
   color: var(--white-color);
   font-weight: 600;
-  padding: 1rem 2rem;
+  padding: 1rem 1em;
   border-radius: 25px;
   border: 2px solid var(--second-color);
   transition: transform 0.3s ease, background-color 0.3s ease;
-  margin-top: 1.5rem;
+  margin-top: .5rem;
+  font-size: .8rem;
 }
 
 .hero-section .cta-button:hover {
@@ -145,7 +145,7 @@ a:hover {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-weight: 600;
-  color: var(--second-color);
+  color: var(--white-color);
 }
 
 .section-funil p {
@@ -164,11 +164,12 @@ a:hover {
   background-color: var(--second-color);
   color: var(--white-color);
   font-weight: 600;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   border-radius: 25px;
   border: 2px solid var(--second-color);
   transition: transform 0.3s ease, background-color 0.3s ease;
   margin-top: 1.5rem;
+  font-size: 0.8rem;
 }
 
 .section-funil .cta-button:hover {
@@ -221,7 +222,7 @@ a:hover {
 }
 
 .section-valores-garantia .preco-original {
-  font-size: 2rem; /* Tamanho maior */
+  font-size: 1.6rem; /* Tamanho maior */
   color: var(--text-color);
   margin-bottom: 0.5rem;
 }
@@ -232,7 +233,7 @@ a:hover {
 }
 
 .section-valores-garantia .preco-promocional {
-  font-size: 1.5rem; /* Tamanho maior */
+  font-size: 1rem; /* Tamanho maior */
   margin-bottom: 0.5rem;
 }
 
@@ -247,7 +248,7 @@ a:hover {
 }
 
 .section-valores-garantia .preco-vista {
-  font-size: 1.5rem; /* Tamanho maior */
+  font-size: 1rem; /* Tamanho maior */
   font-weight: 600;
   margin-bottom: 1.5rem;
 }
@@ -257,18 +258,18 @@ a:hover {
 }
 
 .section-valores-garantia .detalhes {
-  font-size: 1.2rem; /* Tamanho maior */
+  font-size: 1rem; /* Tamanho maior */
   margin-bottom: 1.5rem;
 }
 
 .section-valores-garantia .garantia-texto {
-  font-size: 1.1rem; /* Tamanho maior */
+  font-size: 1rem; /* Tamanho maior */
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
 .section-valores-garantia .garantia-dias {
-  font-size: 1.3rem; /* Tamanho maior */
+  font-size: 0.7rem; /* Tamanho maior */
   font-weight: 600;
   margin-bottom: 1.5rem;
 }
@@ -287,6 +288,7 @@ a:hover {
   transition: transform 0.3s ease, background-color 0.3s ease;
   margin-top: 1.5rem;
   display: inline-block;
+  font-size: 0.7rem;
 }
 
 .section-valores-garantia .cta-button:hover {
@@ -443,7 +445,7 @@ a:hover {
 .section-professor {
   padding: 3rem 1rem;
   text-align: center;
-  background-color: var(--first-color-alt);
+  background-color: var(--body-color);
   color: var(--white-color);
 }
 
@@ -456,7 +458,7 @@ a:hover {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
   font-weight: 600;
-  color: var(--second-color);
+  color: var(--white-color);
 }
 
 .section-professor .payment-icons img {
@@ -536,6 +538,7 @@ a:hover {
   border: 2px solid var(--second-color);
   transition: transform 0.3s ease, background-color 0.3s ease;
   display: inline-block;
+  font-size: 0.8rem;
 }
 
 .section-professor .cta-button:hover {
@@ -573,7 +576,7 @@ footer.copyright {
 /*=============== BREAKPOINTS RESPONSIVOS ===============*/
 @media (max-width: 575.98px) {
   .hero-section .headline h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .section-funil h2 {

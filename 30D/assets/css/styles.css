@@ -106,8 +106,8 @@ a:hover {
   border-radius: 25px;
   border: 2px solid var(--second-color);
   transition: transform 0.3s ease, background-color 0.3s ease;
-  margin-top: .5rem;
-  font-size: .8rem;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
 }
 
 .hero-section .cta-button:hover {
@@ -200,25 +200,25 @@ a:hover {
 }
 
 .section-valores-garantia .valores-garantia-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--first-color-alt);
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--first-color-alt);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .section-valores-garantia .valores-content {
-    flex: 1;
-    background: linear-gradient(135deg, #ffd7002e, #ffa50000);
-    padding: 2rem;
-    border-radius: 10px;
-    border: 2px solid #ffa500;
-    text-align: center;
-    margin-right: 1rem; /* Adicionado para espaçamento controlado */
+  flex: 1;
+  background: linear-gradient(135deg, #ffd7002e, #ffa50000);
+  padding: 2rem;
+  border-radius: 10px;
+  border: 2px solid #ffa500;
+  text-align: center;
+  margin-right: 1rem; /* Adicionado para espaçamento controlado */
 }
 
 .section-valores-garantia .preco-original {
@@ -576,11 +576,11 @@ footer.copyright {
 /*=============== BREAKPOINTS RESPONSIVOS ===============*/
 @media (max-width: 575.98px) {
   .hero-section .headline h3 {
-    font-size: 1.2rem;
+    font-size: 18px;
   }
 
   .section-funil h2 {
-    font-size: 1.8rem;
+    font-size: 18px;
   }
 
   .section-valores .selo-garantia {
@@ -645,20 +645,214 @@ footer.copyright {
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .hero-section .headline h3 {
-    font-size: 3rem;
+    font-size: 24px;
+  }
+
+  .hero-section .headline p {
+    font-size: 14px;
+    margin-bottom: 1rem;
   }
 
   .section-funil h2 {
-    font-size: 3rem;
+    font-size: 24px;
   }
 }
 
 @media (min-width: 1200px) {
   .hero-section .headline h3 {
-    font-size: 3.5rem;
+    font-size: 24px;
   }
 
   .section-funil h2 {
-    font-size: 3.5rem;
+    font-size: 24px;
   }
+}
+
+/*=============== SECTION POR QUE CONFIAR ===============*/
+.section-porque-confiar {
+  padding: 3rem 1rem;
+  background-color: var(--first-color-alt);
+  color: var(--white-color);
+}
+
+.section-porque-confiar .porque-confiar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.section-porque-confiar .porque-confiar-imagem {
+  flex: 1;
+  text-align: center;
+}
+
+.section-porque-confiar .imagem-professor {
+  width: 50%;
+  max-width: 400px;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  margin-bottom: -2rem;
+}
+
+.section-porque-confiar .imagem-professor:hover {
+  transform: scale(1.05);
+}
+
+.section-porque-confiar .porque-confiar-conteudo {
+  flex: 2;
+}
+
+.section-porque-confiar h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--second-color);
+}
+
+.section-porque-confiar h3 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--second-color);
+}
+
+.section-porque-confiar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.section-porque-confiar ul li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.section-porque-confiar .promessa {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.section-porque-confiar .promessa strong {
+  color: var(--second-color);
+}
+
+.section-porque-confiar .button-container {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.section-porque-confiar .cta-button {
+  background-color: var(--second-color);
+  color: var(--white-color);
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  border: 2px solid var(--second-color);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: inline-block;
+}
+
+.section-porque-confiar .cta-button:hover {
+  background-color: var(--second-color-alt);
+  transform: translateY(-3px);
+}
+
+/*=============== BREAKPOINTS RESPONSIVOS ===============*/
+@media (max-width: 767.98px) {
+  .section-porque-confiar .porque-confiar-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-porque-confiar .porque-confiar-imagem {
+    order: -1; /* Coloca a imagem no topo */
+    margin-bottom: 1.5rem;
+  }
+
+  .section-porque-confiar .imagem-professor {
+    max-width: 300px;
+  }
+
+  .section-porque-confiar h2 {
+    font-size: 18px;
+  }
+
+  .section-porque-confiar h3 {
+    font-size: 1.5rem;
+  }
+
+  .section-porque-confiar ul li {
+    font-size: 1rem;
+  }
+
+  .section-porque-confiar .promessa {
+    font-size: 1rem;
+  }
+}
+
+/*VSL*/
+/* Estilo do Contêiner do Vídeo */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* Estilo da Thumbnail */
+.video-thumbnail {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.video-thumbnail:hover img {
+  opacity: 0.8;
+}
+
+/* Estilo do Botão de Play */
+.video-thumbnail .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.video-thumbnail .play-button::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid var(--second-color);
+  transform: translateX(5px);
+}
+
+.video-thumbnail:hover .play-button {
+  background-color: rgba(255, 255, 255, 1);
 }

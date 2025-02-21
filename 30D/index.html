@@ -59,18 +59,23 @@
 
         <!-- Texto chamativo -->
         <div class="headline container_text">
-            <h3>TRANSFORME SEU <span>NEGÓCIO</span> EM UMA MÁQUINA DE VENDAS EM <span><br> 30 DIAS </span>TENHA CLIENTES
-                TE <span>PROCURANDO TODOS OS DIAS!</span></h3>
-            <h4><span>Domine os anúncios online</span> de forma <span>inteligente e eficaz</span> para atrair clientes,
-                fazer vendas e <span>crescer seu negócio.</span></h4>
+            <h3>TRANSFORME SEU NEGÓCIO EM UMA MÁQUINA DE VENDAS EM <br> 30 DIAS TENHA CLIENTES
+                TE PROCURANDO TODOS OS DIAS!</h3>
+            <p style="color: rgb(152 152 152);">Domine os anúncios online de forma inteligente e eficaz para atrair clientes,
+                fazer vendas e crescer seu negócio.</p>
         </div>
 
-        <!-- Vídeo do YouTube -->
+        <!-- Vídeo do YouTube com Thumbnail -->
         <div class="video-container">
-            <iframe
-                src="https://www.veed.io/embed/2d31b94d-6a8b-4499-931c-32332ffd97c4?watermark=0&color=purple&sharing=0&title=1"
-                width="744" height="504" frameborder="0" title="Método Destrave30d Venda Todos os Dias"
-                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <div class="video-thumbnail" onclick="iniciarVideo(this)">
+                <img src="https://img.youtube.com/vi/6cJb-Nh9lVQ/maxresdefault.jpg" alt="Thumbnail do Vídeo"
+                    class="thumbnail">
+                <div class="play-button"></div>
+            </div>
+            <iframe id="video-iframe" src="" width="744" height="504" frameborder="0"
+                title="Método Destrave30d Venda Todos os Dias"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen style="display: none;"></iframe>
         </div>
 
         <!-- Botão de ação -->
@@ -87,22 +92,26 @@
         <div class="text-container">
             <h2>DESBLOQUEIE O POTENCIAL DO SEU NEGÓCIO</h2>
             <p>
-                <span>Com o MÉTODO 30D: VENDA TODOS OS DIAS</span>, você vai aprender a conquistar resultados consistentes em apenas
-                <span> 30 dias.</span>
+                Com o MÉTODO 30D: VENDA TODOS OS DIAS, você vai aprender a conquistar resultados
+                consistentes em apenas
+                30 dias.
                 <br>
                 <br>
-                Este é um <span>método prático</span>, focado em estratégias que <span>realmente funcionam no mundo dos negócios.</span>
+                Este é um método prático, focado em estratégias que realmente funcionam no mundo dos
+                negócios.
                 <br>
                 <br>
-                Você descobrirá como atrair <span>novos CLIENTES</span>, aumentar sua visibilidade e melhorar suas vendas de forma
-                <span>rápida e eficaz.</span> 
+                Você descobrirá como atrair novos CLIENTES, aumentar sua visibilidade e melhorar suas
+                vendas de forma
+                rápida e eficaz.
                 <br>
                 <br>
-                <span>Este curso é para quem deseja vender mais, de forma simples e direta.</span>
+                Este curso é para quem deseja vender mais, de forma simples e direta.
                 <br>
                 <br>
-                <span>Não fique parado enquanto outros avançam.</span> Junte-se a uma comunidade de profissionais que já estão
-                <span>alcançando seus objetivos</span>  com o <span>MÉTODO 30D!</span>
+                Não fique parado enquanto outros avançam. Junte-se a uma comunidade de profissionais que já
+                estão
+                alcançando seus objetivos com o MÉTODO 30D!
                 <br>
                 <br>
 
@@ -168,17 +177,56 @@
         </div>
     </section>
 
-    <!-- Seção Garantia -->
-    <section class="section-garantia">
-        <div class="garantia-container">
-            <h2>Garantia Incondicional de 7 Dias</h2>
-            <p>
-                Se por qualquer motivo você não gostar do treinamento ou achar que não acrescentou nada para o seu
-                negócio,
-                <strong>eu devolvo 100% do seu dinheiro!</strong> O risco é todo meu. Você tem 7 dias para solicitar seu
-                reembolso.
-            </p>
-            <a href="https://pay.kiwify.com.br/9Mbd0SC" class="cta-button">Quero Garantir Minha Vaga!</a>
+    <!-- Seção Por Que Confiar -->
+    <section class="section-porque-confiar">
+        <div class="porque-confiar-container">
+            <!-- Imagem à Esquerda -->
+            <div class="porque-confiar-imagem">
+                <img src="assets/img/LOGO DESTRAVE.png" alt="Fernando Sabino" class="imagem-professor">
+            </div>
+
+            <!-- Conteúdo à Direita -->
+            <div class="porque-confiar-conteudo">
+                <h2>Por que confiar no meu método?</h2>
+                <ul class="lista-beneficios">
+                    <li>✅ <strong>10 anos de experiência</strong> ensinando gestão e estratégias de negócios.</li>
+                    <li>✅ <strong>+3.500 alunos impactados</strong> em cursos, mentorias e consultorias.</li>
+                    <li>✅ <strong>Cases reais:</strong> empresas que aumentaram vendas em até 300% com minhas
+                        estratégias.</li>
+                    <li>✅ <strong>Foco no essencial:</strong> ensino apenas o que funciona, sem enfeites ou
+                        complexidades.</li>
+                </ul>
+
+                <h3>O que você vai encontrar no Destrave30D:</h3>
+                <ul class="lista-destaques">
+                    <li>🔥 Passo a passo simplificado para configurar campanhas no <strong>Meta Ads</strong> e
+                        <strong>Google Ads</strong>.
+                    </li>
+                    <li>🔥 Estratégias de ofertas irresistíveis que convertem até os clientes mais indecisos.</li>
+                    <li>🔥 Técnicas de <strong>copywriting</strong> para criar mensagens que vendem enquanto você dorme.
+                    </li>
+                    <li>🔥 Acesso de <strong>1 ano</strong> a estratégias e atualizações contínuas.</li>
+                </ul>
+
+                <h3>Para quem é este curso?</h3>
+                <ul class="lista-publico">
+                    <li>✔️ Empreendedores que querem escalar vendas sem depender de terceiros.</li>
+                    <li>✔️ Profissionais de marketing que buscam métodos práticos e rápidos.</li>
+                    <li>✔️ Empresários que desejam reduzir custos com anúncios e aumentar o lucro.</li>
+                </ul>
+
+                <p class="promessa">
+                    <strong>Minha promessa para você:</strong><br>
+                    Em 30 dias, você estará apto a criar e gerenciar campanhas que vendem todos os dias, mesmo sem
+                    experiência prévia.<br>
+                    <strong>Chega de ser refém de algoritmos ou "gurus"!</strong>
+                </p>
+
+                <!-- Botão de CTA -->
+                <div class="button-container">
+                    <a href="https://pay.kiwify.com.br/9Mbd0SC" class="cta-button">Comece sua transformação agora!</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -250,6 +298,20 @@
     <footer class="copyright">
         <p>© 2024 Destrave Digital. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        function iniciarVideo(element) {
+    // Esconde a thumbnail e o botão de play
+    element.style.display = "none";
+
+    // Mostra o iframe do vídeo
+    const iframe = document.getElementById("video-iframe");
+    iframe.style.display = "block";
+
+    // Define o src do iframe para iniciar o vídeo
+    iframe.src = "https://www.youtube.com/embed/6cJb-Nh9lVQ?autoplay=1&rel=0&controls=1&showinfo=0";
+}
+    </script>
 
 </body>
 

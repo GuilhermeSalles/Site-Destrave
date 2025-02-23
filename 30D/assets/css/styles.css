@@ -576,7 +576,7 @@ footer.copyright {
 /*=============== BREAKPOINTS RESPONSIVOS ===============*/
 @media (max-width: 575.98px) {
   .hero-section .headline h3 {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .section-funil h2 {

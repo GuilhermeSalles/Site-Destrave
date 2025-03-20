@@ -143,7 +143,7 @@
                   Garantindo uma presença digital completa e efetiva. Invista no crescimento com uma abordagem estratégica, não em milagres.
                </p>
 
-               <a href="https://wa.me/5519988408183?text=Olá%2C%20gostaria%20de%20tirar%20dúvidas%20sobre%20a%20assessoria!" class="home__button botao" id="openModalButton">Quero Mais Informações</a>
+               <a class="home__button botao" id="openModalButton">Quero Mais Informações</a>
             </div>
 
             <div class="home__images">

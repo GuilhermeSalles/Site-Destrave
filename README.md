@@ -1,5 +1,6 @@
 
 # Site Destrave
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/GuilhermeSalles/Site-Destrave/blob/main/LICENSE)
 
 ## Visão Geral
 O Site Destrave é um projeto web criado para oferecer serviços de marketing e desenvolvimento empresarial. Com um design interativo e amigável, o site visa facilitar o acesso dos usuários a informações e recursos para o seu crescimento empresarial e profissional.
